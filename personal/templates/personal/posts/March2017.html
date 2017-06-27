@@ -1,0 +1,107 @@
+{% extends "personal/header.html" %}
+
+
+{% block content %}
+
+{% load static %}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-3"></div>
+
+        <div class="col-md-6" style="background-color: white;">
+            <h1 class="text-center" style="margin-top: -10px; padding-bottom: 5px;">Productivity Report - March 2017</h1>
+            <img class="img-responsive banner-img" src="{% static 'personal/March2017.png' %}" alt="March 2017 banner" />
+
+            <p>This month's banner image is a picture of some of my handwritten problem solving. You can't code without pen and paper.</p>
+            <h2>Broad Overview</h2>
+            <p>March 2017 is the seventh month in which I have tracked my productivity. I started the month by finishing up Harvard’s intro to computer science class, <a href="https://www.edx.org/course/introduction-computer-science-harvardx-cs50x">CS50</a>, and I finished the month working on a new project. Here is the breakdown of how I spent my time in March:</p>
+            <ul>
+                <li>Fitness: <strong>53.0</strong> hours</li>
+                <li>Software Development: <strong>49.5</strong> hours</li>
+                <li>Other: <strong>5.5</strong> hours</li>
+                <li>Total productive hours: <strong>108</strong> hours</li>
+            </ul>
+            <p>My average amount of productive hours per day (from all categories) was <strong>3.55</strong> hours.</p>
+
+            <p>Now go ahead and give me a round of applause, because March 2017 was my most productive month yet! With 108 total productive hours, I just barely topped my previous most productive month of January 2017 (100.5 hours). Compared to last month, February 2017, I was nearly twice as productive.</p>
+            <h2>Software Development</h2>
+            <p>With <strong>49.5</strong> software development hours, March 2017 was my second most productive software dev month since I’ve been tracking my productivity.</p>
+
+            <p>My overall software development goal for the month of March was to:</p>
+            <ul>
+                <li>Complete the remaining two homework assignments for CS50</li>
+            </ul>
+            <p>I was successful in completing my goal with about a week to spare. The last two assignments for CS50 were both web dev related, and I had to learn a bit of html, javascript, SQL, and Flask to complete them. This served as a good introduction to web dev, although not super in-depth (but what can you expect out of two weeks’ worth of work?).</p>
+
+            <p>So now that I’ve completed CS50 (except for the final project), how would I rate my experience? Overall, it was a great introduction to some key computer science concepts and popular languages/technologies that I would not have otherwise gained just by working on my own projects. It truly was a productive use of my time, and I think that I will take more online courses in the future (such as Princeton's Data Structures and Algorithms series).</p>
+
+            <p>In the last week, since finishing the last CS50 assignment, I have begun work on my final project. So what exactly am I creating? Well, I don’t know yet, exactly.</p>
+
+            <p>I’ve (so far) gone back to Unity and C# and begun to attempt to create a procedural 2d tilemap generator. If you don’t know what I mean by that, think of games like RimWorld, Age of Empires 2, or Civilization. The maps in these games are created <em>procedurally</em> in a controlled manner with some element of randomness. So then, is this project going to turn into a game?</p>
+
+            <p>Maybe. Maybe not.</p>
+
+            <p>If not, it is quite likely that eventually I will use what I learn from this in a future game; however, I am heavily considering wrapping this particular project up as nothing more than a fun procedural world generation tool.</p>
+
+            <p>As I mentioned, I am using Unity with C# so far, but once I get something working in Unity I am strongly considering moving to either Java or C++ or even just C# with monogame in order to recreate/complete the project. There are a few reasons for this:</p>
+            <ol>
+                <li>Unity is a great tool that undoubtedly speeds up the game development process, but I feel like I might have more control over my creations if I move to a more “coding oriented” technology.</li>
+                <li>I have a ton of ideas for mobile apps. Java is the ubiquitous language for android development. I do not yet have any experience with Java. I want to learn Java.</li>
+                <li>I think it would be very valuable to get more lower-level experience with C++. Also, C++ is the language of choice for triple A game studios.</li>
+            </ol>
+            <p>Currently, C# is sort of my go-to language, but I think there could be value in switching over to Java. I know it’s generally seen as a good idea for a novice programmer like myself to pick a language and just stick with it for a while, but since I want to get into Android development sooner rather than later, I think I might ought to go ahead and switch to Java. I’m still not sure, but I’ve got time to decide.</p>
+
+            <p>My goal for April 2017 is to work diligently on my project and have some real progress to show for it by the end of the month.</p>
+            <h2>Fitness</h2>
+            <p>In March 2017, my overall fitness hours totaled to <strong>53</strong> hours. I spent <strong>44.5</strong> hours lifting weights, and I spent <strong>8.5</strong> hours running AND cycling for cardio. That’s right, bicycle season is finally back. Expect my cardio hours to go way up. My average lifting hours per week was <strong>10.04</strong> hours, and my average cardio hours per week was <strong>1.92</strong> hours.</p>
+
+            <p>Finally, in March 2017, I actually remembered to record my bodyweight every single day. I think this was instrumental in helping me keep my eye on the goal.</p>
+
+            <p>My weight loss goal for March was to get below 210 lbs body weight, with an average body weight of less than 212 lbs. I succeeded in this goal. Here’s some data for you.</p>
+
+            <p>First, a chart showing my weight on each day of the month:</p>
+
+            <img class="img-responsive banner-img" src="{% static 'personal/charts_and_graphs/march2017_bodyweight_daily.png' %}" alt="March Body Weight Daily" />
+
+            <p>You can see a steady downward trend. My peak weight was 215.0 lbs on March 4, and my lowest weight was 206.6 lbs on March 31. Now, you might look at that data and say “WOW! You lost 8.4 lbs in one month!”, but that isn’t quite honest.</p>
+
+            <p>I think a better way to look at the data is by average bodyweight per week (for the purposes of this chart, the first three days of the month were excluded):</p>
+
+            <img class="img-responsive banner-img" src="{% static 'personal/charts_and_graphs/march2017_bodyweight_weekly.png' %}" alt="March Body Weight Weekly" />
+
+            <p>Here you can see that in the first week of the month I averaged 213.71 lbs, and in the last week I averaged 208.74 lbs. Taking the difference, we can say that <strong>I lost about right around 5 lbs over the course of the month</strong>, or about 1.25 lbs per week. That seems like a fair and healthy rate of weight loss to me.</p>
+
+            <p>On the lifting side of things, my goal was to front squat 185 lbs for 5 sets of 10. I succeeded in this goal also, although my form was not the best on my last few reps. In other news, I hit a new PR on deadlift with 420 lbs. My form was definitely not great, but I was able to grip it and rip it, so COUNT IT.</p>
+
+            <p>My fitness goal for April 2017 will be to get below 205 lbs body weight while maintaining strength on all lifts.</p>
+            <h2>Other</h2>
+            <p>In this past month, I spent <strong>5.5</strong> hours doing other productive stuff, like writing this blog post.</p>
+            <h2>Student Loan Repayment</h2>
+            <p>Last month, my goal was to put <span style="color: #339966;">$500</span> toward my debt. I met that goal exactly.</p>
+
+            <p>In the month of March 2017, I paid <span style="color: #339966;">$500</span> toward my student loan debt, which currently rests at a total of <span style="color: #ff0000;">$27,722.89</span>. Since graduating in May of 2016, I have put <span style="color: #339966;">$15,850</span> toward my student loan debt. That means I have paid off <span style="color: #339966;">$13,970.03</span> of the original <span style="color: #ff0000;">$41,692.92</span> total. (For those wondering about how the numbers add up, keep in mind that some of the money I pay toward my debt goes to paying off interest).</p>
+
+            <p>It was hard putting so little money toward my mountain of debt, but fortunately I will be able to make payments at a reasonable rate again starting in April. My goal for next month will be to pay off $1600 of student loan debt.</p>
+
+            
+            <h2>Goals for next month (April 2017):</h2>
+            <h3>Software Dev Goals:</h3>
+            <ul>
+                <li>work diligently on my project and have some real progress to show for it by the end of the month.</li>
+            </ul>
+            <h3>Fitness Goals:</h3>
+            <ul>
+                <li>Get below 205 lbs bodyweight</li>
+                <li>Maintain strength on all lifts</li>
+            </ul>
+            <h3>Student Loan Repayment Goals:</h3>
+            <ul>
+                <li>Pay off at least $1600.</li>
+            </ul>
+
+        </div>
+        <div class="col-md-3"></div>
+    </div>
+</div>
+
+{% endblock %}

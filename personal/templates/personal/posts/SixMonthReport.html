@@ -1,0 +1,120 @@
+{% extends "personal/header.html" %}
+
+
+{% block content %}
+
+{% load static %}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-3"></div>
+
+        <div class="col-md-6" style="background-color: white;">
+            <h1 class="text-center" style="margin-top: -10px; padding-bottom: 5px;">Six Month Productivity Report</h1>
+            <img class="img-responsive banner-img text-center" src="{% static 'personal/6Month_sept17_feb17/banner.png' %}" alt="Six Month banner" />
+
+            <p>For the past 6 months, I have been using Excel to track my time spent being productive. I split my productive hours into two main categories, Software Development and Fitness. I also have an “other” category, but for this 6 month report I will be focusing only on Software Development and Fitness hours.</p>
+            <h2>Total Productive Hours</h2>
+            <p>Before we get to the visuals, I’d like to share a statistic that I am really proud of. Over the past six months, I have spent 469.25 hours being productive. That means that I was productive for 10.8% of that six month period. If you only count the times during that six months in which I was both awake and not at work, then that percentage becomes 26.5%. It feels good to say that <strong>over the past six months, I have spent 26.5% of my free time being productive.</strong> Keep in mind that “being productive” here means specifically only time that I spent exercising or learning/working on software development. Time spent on “soft” productivity, such as running errands, cooking supper, cleaning the bathroom, etc, is not counted as productive time.</p>
+            <br>
+            <p>Now for the visuals. Here is a chart showing my total productive hours each month, from September 2016 through February 2017. As you can see, January was my most productive month, with 100.5 hours of productivity. During this six month period, I averaged 78.2 productive hours per month.</p>
+
+            &nbsp;
+
+            <img class="img-responsive banner-img" src="{% static 'personal/6Month_sept17_feb17/total_prod_hours.bmp' %}" alt="Total Productive Hours" width="480" height="289" />
+
+            <p>Now let’s take a look at how the hours break down for each of our two categories, Software Development and Fitness:</p>
+
+            &nbsp;
+
+            <img class="img-responsive banner-img" src="{% static 'personal/6Month_sept17_feb17/software_hours.bmp' %}" alt="Software Hours" width="487" height="289" />
+
+            <img class="img-responsive banner-img" src="{% static 'personal/6Month_sept17_feb17/fitness_hours.bmp' %}" alt="Fitness Hours" width="486" height="292" />
+
+            <p>Interesting to note is that during most months, I spent more time working on fitness than I did on software development. January and December are the only exceptions. If you would like to know more specifically what I was doing during my productive hours, make sure to take a look at each of my monthly productivity reports, which can be found here on BelowParallelStudios.com.</p>
+            <br>
+            <p>Now, I’m sure that some people will look at the data I’ve presented here and wonder, “how the hell does this guy manage to be so productive?”</p>
+            <br>
+            <p>Well, for me, the key to being productive is keeping a strict routine. I very rarely stray from my daily routine. Let’s walk through a day in the life:</p>
+            <table class="table table-striped">
+                <caption>Daily Schedule</caption>
+                <thead>
+                    <tr>
+                        <th>Time</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>6:30 am</td>
+                        <td>Wake up, eat oatmeal</td>
+                    </tr>
+                    <tr>
+                        <td>8:00 am</td>
+                        <td>Arrive at work</td>
+                    </tr>
+                    <tr>
+                        <td>12:00 - 12:20 pm</td>
+                        <td>Read something related to Software Development (sometimes I just browse Reddit)</td>
+                    </tr>
+                    <tr>
+                        <td>4:30 – 5:30 pm</td>
+                        <td>Arrive home from work and have a meal</td>
+                    </tr>
+                    <tr>
+                        <td>6:00 – 8:00 pm</td>
+                        <td>Software development</td>
+                    </tr>
+                    <tr>
+                        <td>8:00 – 8:30 pm</td>
+                        <td>Drink tea and psyche up for the gym</td>
+                    </tr>
+                    <tr>
+                        <td>8:30 – 11:00 pm</td>
+                        <td>(if weights day) Lift weights</td>
+                    </tr>
+                    <tr>
+                        <td>11:00 pm – 12:00 am</td>
+                        <td>Cook/eat supper</td>
+                    </tr>
+                    <tr>
+                        <td>12:00 – 6:30 am</td>
+                        <td>sleep</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>And there you have it. Now, of course, that is my schedule for lifting days. On my cardio days, I just run for about 30 minutes instead of lifting weights. The only real difference on cardio days is that I get to bed earlier. Most days are lifting days though (6 out of every 7 days, to be exact).</p>
+            <h2>Productive Hours by Month</h2>
+            <p>I also made some neat pie charts. There’s one for each month. Here they are:</p>
+
+            <img class="img-responsive banner-img" src="{% static 'personal/6Month_sept17_feb17/sept_pie.bmp' %}" alt="September hours" width="488" height="289" />
+
+            <img class="img-responsive banner-img" src="{% static 'personal/6Month_sept17_feb17/oct_pie.bmp' %}" alt="October hours" width="486" height="292" />
+
+            <img class="img-responsive banner-img" src="{% static 'personal/6Month_sept17_feb17/Nov_pie.bmp' %}" alt="November hours" width="488" height="293" />
+
+            <img class="img-responsive banner-img" src="{% static 'personal/6Month_sept17_feb17/Dec_pie.bmp' %}" alt="December hours" width="488" height="289" />
+
+            <img class="img-responsive banner-img" src="{% static 'personal/6Month_sept17_feb17/Jan_pie.bmp' %}" alt="January hours" width="488" height="293" />
+
+            <img class="img-responsive banner-img" src="{% static 'personal/6Month_sept17_feb17/Feb_pie.bmp' %}" alt="February hours" width="486" height="292" />
+
+            &nbsp;
+
+            <p>The reason that cardio was a larger proportion of my total fitness hours in September and October is because I ride my bike a lot when it is warm outside. Starting in either March or April 2017, my cardio numbers should be going up again.</p>
+            <h2>Student Loan Debt Repayment</h2>
+            <p>Along with tracking my productivity, I also have been tracking payments I put toward my student loan debt. When I graduated college in May 2016, I owed $41,692.92. That’s a lot of money! Fortunately, I am in a position where I am able to pay it off relatively quickly. It is my main financial goal.</p>
+            <br>
+            <p>Here is a chart showing how much debt I paid off each month:</p>
+
+            <img class="img-responsive banner-img" src="{% static 'personal/6Month_sept17_feb17/student_loans.bmp' %}" alt="Student Loans" width="644" height="385" />
+
+            <p>Over the past six months, I put $8,350.00 toward my student loan debt. Factoring in interest, I have taken my principal debt down by $6,646.44. I still have a large amount of debt left to pay off ($28,141.80), but at this rate I should be able to take it out before too long.</p>
+            <h2>Summary</h2>
+            <p>So there it is – a quick, visual recap of my productivity over the past six months. I managed to be <strong>productive for 26.5% of my free time</strong>, amassing a total of <strong>469.25 productive hours</strong>. I also managed to <strong>pay off $6,646.44 of my student loan debt</strong>. I do think I could be at least slightly more productive, but I am proud of what I have accomplished. Check back each month for the monthly productivity reports to see if I’ve been able to keep it up.</p>
+
+        </div>
+        <div class="col-md-3"></div>
+    </div>
+</div>
+
+{% endblock %}

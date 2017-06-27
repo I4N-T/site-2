@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+	
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://use.fontawesome.com/e6ad9537dd.js"></script>
+	
+	{% load static %}
+	{% include "personal/includes/sitecss.html" %}
+
+
+    <title>gobber</title>
+
+
+</head>
+
+<body class="body-content background-custom" >
+    <div id="content" class="container-fluid" >
+        
+        <div class="row" >
+            <div class="col-md-3 "></div>
+            <div class="col-md-6" style="background-color: white;">
+                <div class="row">
+                    <div class="col-md-3">
+                        <span style="font-size: 64px;"><i class="fa fa-bicycle"></i>~~</span>
+                    </div>
+
+                    <div class="col-md-6 text-center">
+					
+					
+                    <img id="my-pic" class="img-responsive" src="{% static 'personal/me01_zoom.jpg' %}" alt="picture of me" />
+                        </div>
+
+                    <div class="col-md-3">
+                        <span style="font-size: 64px;">~~<i class="fa fa-bicycle"></i></span>
+                        </div>
+                    </div>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+
+        <div id="list" class="row" >
+            <div class="col-md-3"></div>
+
+            <div class="col-md-6" style="background-color: white; margin-top: -5px;">
+                <div class="text-center">
+            <ul id="navbar-list" class="nav-full">
+                <li><a href="{% url 'about' %}"><i class="fa fa-info-circle"></i> About</a></li>
+                <li><a href="{% url 'projects' %}"><i class="fa fa-wrench"></i> Projects</a></li>
+                <li><a href="{% url 'contact' %}"><i class="fa fa-envelope-open-o"></i> Contact</a></li>
+                <!--<li><a href="@Url.Action("Resume", "Home")"><i class="fa fa-file-pdf-o"></i> Resume</a></li>-->
+                <li><a href="{% url 'blog' %}"><i class="fa fa-newspaper-o"></i> Blog</a></li>
+                
+            </ul>
+                    </div>
+
+
+                </div>
+
+            <div class="col-md-3"></div>
+        </div>
+
+    </div>
+
+
+{% block content %}
+
+{% endblock %}
+
+
+    <footer>
+	<div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3"></div>
+
+            <div class="col-md-6 text-center" style="border-top: 3px double black; padding: 10px; background-color: white;">
+                <p>Find me on social media:</p> <ul id="navbar-list">
+
+                    <li><a href="https://github.com/BelowParallelStudios"><i class="fa fa-github social"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/ian-terry-606737a5/"><i class="fa fa-linkedin social"></i></a></li>
+                    <li><a href="https://twitter.com/BelowParallel_"><i class="fa fa-twitter social"></i></a></li>
+
+                </ul>
+            </div>
+            <div class="col-md-3"></div>
+
+        </div>
+		</div>
+    </footer>
+    
+
+</body>
+
+
+
+</html>

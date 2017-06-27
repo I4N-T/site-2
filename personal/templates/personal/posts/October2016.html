@@ -1,0 +1,161 @@
+{% extends "personal/header.html" %}
+
+
+{% block content %}
+
+{% load static %}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-3"></div>
+
+        <div class="col-md-6" style="background-color: white;">
+            <h1 class="text-center" style="margin-top: -10px; padding-bottom: 5px;">Productivity Report - October 2016</h1>
+            <img class="img-responsive banner-img" src="{% static 'personal/Oct2016.png' %}" alt="October 2016 banner" />
+
+            Each Month, I plan to make a post detailing what I’ve been working on, what I’ve accomplished, and just what I’ve been up to. This month's banner picture was taken at Atlantic Beach in Florida.
+            <h2>Broad Overview</h2>
+
+            <p>First things first. Here's a gif of me doing a back flip at a trampoline park.</p>
+
+            <img class="img-responsive banner-img" src="{% static 'personal/Gifs/backflip.gif' %}" alt="backflip" />
+
+            <p>Now that we got that out of the way, let's talk about how productive I was this month.</p>
+
+            <p>October is the second month that I’ve tracked my productive hours. I did well this month, overall, despite taking 4 days totally off near the end of the month. Here’s the official breakdown:</p>
+            <ul>
+                <li>Fitness: 45.5 hours</li>
+                <li>Game Development: 36.5 hours</li>
+                <li>Business/Website: 6 hours</li>
+            </ul>
+            <p>My average amount of productive hours per day (from all categories) was 2.83 hours.</p>
+            <h2>Game Development</h2>
+            <p>My overall game development goals for the month of October were as follows:</p>
+            <ul>
+                <li>Work on game development for at least 35 hours.</li>
+                <li>Make real progress toward my goal of completing and releasing Project Swole Bros.</li>
+            </ul>
+            <p>So how did I do? In the month of October 2016, I spent 36.5 hours on game development, so count that as a success.</p>
+
+            <p>Did I make real progress toward completing and releasing Project Swole Bros?  You tell me.</p>
+
+            <p><a href="http://www.belowparallelstudios.com/SwoleBrosGame/index.html" target="_blank">Click here to play - Swole Bros Save the Earth from Martian Invaders</a></p>
+
+            <p><a href="https://github.com/BelowParallelStudios/Project-Swole-Bros" target="_blank">Source code (Warning: This code is a mess.)</a></p>
+
+            <p>Last month, I made a small to-do list for my game. This list was composed such that with the completion of the items on the list, I would have the bare minimum acceptable version of my game ready for release. Here is that list:</p>
+            <ul>
+                <li>Add purchasable items: Protein Shakes, Squats, Deadlift, Workout Bench</li>
+                <li>Add one or two more abilities</li>
+                <li>Implement usage of protein shake during battle</li>
+                <li>Add one new enemy type</li>
+                <li>Add graphics</li>
+            </ul>
+            <p>And here is a list of all of the changes/improvements I made to my game in October:</p>
+            <ul>
+                <li>create Squat Rack item</li>
+                <li>create new enemy type</li>
+                <li>fix game camera positioning/zoom</li>
+                <li>create character sprites</li>
+                <li>create new ability</li>
+                <li>changed item pickup to increase health from random.range(1,5)</li>
+                <li>create tile sprites</li>
+                <li>implement sprites</li>
+                <li>hp item pickups</li>
+                <li>add music</li>
+                <li>add sound effects</li>
+                <li>click "begin workout" to enable squat/bench etc buttons for 10 seconds or w/e</li>
+                <li>Title Screen Art</li>
+                <li>message "cannot enter dungeon at this time" if try to enter dungeon when haveDungeonKey = false</li>
+                <li>return to gym after death instead of gameover</li>
+                <li>make enemy turn not show in the log at the same time as player turn.</li>
+                <li>created "How to Play" button and instructions on Start menu screen</li>
+            </ul>
+            <p>As you can see, I pretty much succeeded in completing that initial small to-do list. I did a whole lot more as well. With that said, my game is still rough around the edges. It is still horribly unbalanced. It is still, well, not very fun to play. But that isn't what's important.</p>
+
+            <p>What is important is that I finished a game (well, a prototype anyways). I chose a concept. I wrote some code. I tested the gameplay. I made adjustments. I created some art. I composed some music. And I put it all together. No matter what anyone else says about my game, it is something that I can be proud of.</p>
+
+            <p>Of course, when I say that I "finished" my game, what I really mean is that I created a minimum viable product. In other words, what I have produced so far is what I would consider to be just about the lowest quality version of the game that I am willing to show to the world. I actually have an ever-growing wish-list of features that I would like to add to this game should I ever decide to work on it some more. Here is that list:</p>
+            <ul>
+                <li>add "treadmill" item; doing cardio instead of lifting can increase max HP. Have a cardioVal that is worth +1 HP per 50 clicks or something.</li>
+                <li>make a max value for hp and calories</li>
+                <li>make dungeon key on a timer; add it to shop</li>
+                <li>max hp increase +1 for every +10 maxBench or maxSquat</li>
+                <li>enemy2 has "heat seeking" movement AI</li>
+                <li>Enemy2 gives different reward</li>
+                <li>make it so you can only buy 1 protein shake "you already have this item" or "you can only hold one of this item"</li>
+                <li>run "insufficientcalbool" from GameManager</li>
+                <li>make better abilities GUI</li>
+                <li>make each floor of the dungeon be more than 1 room</li>
+                <li>make pause menu with options to turn audio off and stuff</li>
+                <li>battle scene transition</li>
+                <li>Tutorial/ tool tips</li>
+                <li>at gameover, "your totals are: max bench = xxx, etc."</li>
+                <li>make delay btwn player turn and enemy turn</li>
+                <li>after each workout "you did 34 pushups. That’s a new PR!!!" and stuff like that</li>
+                <li>required to spend calories to begin workout, then have to rest to regain calories.</li>
+                <li>make a way to close game (unless embedded on web only)</li>
+                <li>make incgame scene look presentable</li>
+                <li>clean up battle scene</li>
+            </ul>
+            <p>One important thing I learned this month, concerning game development, is how to use delegates/events in C#. I also was able to gain a much better understanding of coroutines and how they work. As a game developer that does not come from a programming background, it’s the little lessons I’m learning, like these, that I know are really pushing my skills forward.</p>
+
+            <p>Originally I had planned to spend the month of November continuing to tweak Swole Bros and make it juicier, but I've changed my mind. Since rapid iteration is king in the world of design, I think it is imperative that I focus my efforts on creating a new game.</p>
+
+            <p>My new goal for November 2016 is to participate in the GitHub Gameoff. I still plan to make a game for Ludum Dare in December, but I figured "Hey, what the heck?"</p>
+
+            <p>I also plan to use GitHub more often to log my work on the new game.</p>
+            <h2>Fitness</h2>
+            <p>For the month of October 2016, the area where I spent the most productive hours is in fitness. 36.25 of those hours were spent lifting weights, and 9 of those hours were spent doing cardio. That’s an average of 10.27 fitness hours per week, with 8.19 average lifting hours per week and 2.03 average cardio hours per week.</p>
+
+            <p>My average body weight for the month was 209.75 lbs.</p>
+
+            <p>The lifts from October that I am most proud of are:</p>
+            <ul>
+                <li>Bench Press: 265 x 5 reps</li>
+                <li>Squat: 290 x 1 reps (definitely had more in me)</li>
+                <li>Rack pull: 455 x 5 reps</li>
+                <li>Military Press: 175 x 5 reps</li>
+            </ul>
+            <p>My fitness goal from last month was to get my body weight down to 205. I failed miserably. In fact, my body weight went up to 212.2 as of this morning. I am disappointed in myself, but it is what it is. I would carry the same goal over to November, but I know with Thanksgiving and Christmas on the way, it isn’t going to happen. Instead, my goal will simply be to stay below 210.</p>
+
+            <p>In other news, I do think that I am minutely stronger than I was a month ago. I didn’t hit any major milestones, but I do feel stronger due to having incorporated deficit deadlifts and farmers walks into my routine. I think I’ve gained some mass on my forearms as well.</p>
+            <h2>Marketing/Website</h2>
+            <p>In this past month, I spent 6 hours working on this website/marketing</p>
+
+            <p>Most of these hours were spent working on writing this and other posts for this website. I also spent some time making a twitter account and creating video/gifs to share.</p>
+
+            <p>My marketing/website goals from last month were to:</p>
+            <ul>
+                <li>Gain at least one follower on social media. Done</li>
+                <li>Get the Below Parallel website online. Done</li>
+            </ul>
+            <p>I did create a twitter page for Below Parallel, but I forgot to do so until October 29. That didn’t leave me with a whole lot of time to gain exposure. With that said, I did manage to get one follower from my very first tweet, and one more after my second tweet. For November, my goal will be to double my current follower count. Another goal of mine is to share something on Twitter at least once each week. I want to tweet far more than once per week, but I’m not setting my goals too high for now.</p>
+            <h2>Student Loan Repayment</h2>
+            <p>Last month, my goal was to put $1500 toward my debt. I far exceeded that goal.</p>
+
+            <p>In the month of October 2016, I paid <span style="color: #339966;">$2,500</span> toward my student loan debt, which currently rests at a total of <span style="color: #ff0000;">$32,353.59</span>. Since graduating in May of 2016, I have put $10,750 toward my student loan debt. That means I have paid off <span style="color: #339966;">$9.339.33</span> of the original <span style="color: #ff0000;">$41,692.92</span> total. (For those wondering about how the numbers add up, keep in mind that some of the money I pay toward my debt goes to paying off interest).</p>
+            <h2>Goals for next month (November 2016):</h2>
+            <h3>Game Dev Goals:</h3>
+            <ul>
+                <li>Work on game development for at least 35 hours.</li>
+                <li>Make a game for the GitHub Gamejam</li>
+            </ul>
+            <h3>Fitness Goals:</h3>
+            <ul>
+                <li>Keep body weight below 210 lbs.</li>
+            </ul>
+            <h3>Marketing/Website Goals:</h3>
+            <ul>
+                <li>Gain at least two more followers on social media.</li>
+                <li>Tweet at least once every week.</li>
+            </ul>
+            <h3>Student Loan Repayment Goals:</h3>
+            <ul>
+                <li>Pay off at least $1,500.</li>
+            </ul>
+        </div>
+        <div class="col-md-3"></div>
+    </div>
+</div>
+
+{% endblock %}
