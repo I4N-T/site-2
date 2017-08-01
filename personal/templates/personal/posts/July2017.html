@@ -1,0 +1,100 @@
+{% extends "personal/header.html" %}
+
+
+{% block content %}
+
+{% load static %}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-3"></div>
+
+        <div class="col-md-6" style="background-color: white;">
+            <h1 class="text-center" style="margin-top: -10px; padding-bottom: 5px;">Productivity Report - July 2017</h1>
+            <img class="img-responsive banner-img" src="{% static '/July2017.png' %}" alt="July 2017 banner" />
+
+            <p>Each Month, I make a post detailing what I’ve been working on, what I’ve accomplished, and just what I’ve been up to. This month's banner image features my newest creation, Flashlight, a game I made for Ludum Dare 39.</p>
+            <h2>Broad Overview</h2>
+            <p>July 2017 is the eleventh month in which I have tracked my productivity. All in all, I was fairly unproductive this month. I started the month with a week long vacation, and I lost some productive time due to sickness, 
+			injury, and familial obligations. I did, however, succeed in making a game for Ludum Dare 39 during the last weekend of the month. Other than that, I worked on a prototype for a management/sim game.</p>
+            <ul>
+                <li>Fitness: <strong>23.25</strong> hours</li>
+                <li>Software Development: <strong>34.75</strong> hours</li>
+                <li>Other: <strong>2.75</strong> hours</li>
+                <li>Total productive hours: <strong>60.75</strong> hours</li>
+            </ul>
+            <p>My average amount of productive hours per day (from all categories) was <strong>2.09</strong> hours.</p>
+
+            <p>July 2017 was one of my least productive months to date. Either way, I did manage to learn a bit and get some stuff done.</p>
+            <h2>Software Development</h2>
+            <p>With only <strong>34.75</strong> software development hours over the past month, it's hard not to be hard on myself. But the relatively small amount of labor for the month was not without fruit. I will try to focus on my accomplishments.</p>
+
+            <p>My overall software development goal for the month of July was to:</p>
+            <ul>
+                <li>Decide on a project to work on, and work hard on it.</li>
+            </ul>
+            <p>Well, I did decide on a project to work on - an office management/sim game tentatively titled "Widget CEO". I worked hard on it... some days. Other days, not so much. I guess we can call this goal kinda-accomplished.</p>
+
+            <p>I won't go into too much detail on Widget CEO for now, since I don't have a whole lot to show for it at the moment. Perhaps next month's report will have a more in depth write-up of the game, assuming I've made substantial
+			progress on it by then.</p>
+
+            <p>Aside from that, I decided to participate in Ludum Dare 39 over the last weekend of the month. This is my second time making a game for Ludum Dare; and, yet again, I learned a ton and had a blast in the process.
+			 For those of you who aren't familiar with Ludum Dare - Ludum Dare is a 48 hour long game jam held 4 times each year. Participants have 48 hours to create a game using whatever technologies they desire.</p>
+
+            <p>Last time, for Ludum Dare 38, I created a game called World Under Siege. Check it out <a href="http://belowparallelstudios.com/WorldUnderSiegeGame/">HERE</a>.</p>
+			
+			<p>For LD39, the theme was "running out of power", and the game I created is called Flashlight. This is the first platformer I have ever created, and I had to learn some things in order to pull it off. For example, 
+			raycasting was essential for the mechanics of the game, so I had to learn a bit about that. I also learned how to use a level design tool for Unity known as Tiled. Both of these lessons learned will undoubtedly benefit
+			me in the future. And that's important. That means that I can honestly say that I am now a better software developer today, than I was at the beginning of the month.</p>
+
+            <p>In total, I spent 17.75 hours creating the game. Much of that time was spent watching tutorials and reading documentation in order try to figure out how to do what I wanted to do.</p>
+			
+			<p>Here is a quick gameplay demo: </p>
+			<iframe width="350" height="350" style="float: right;" src="https://www.youtube.com/embed/PHkOGrTtexk" frameborder="0" allowfullscreen></iframe>
+
+			<p>You can play the game in your browser <a href="https://i4n-t.itch.io/flashlight">HERE</a>.<p>
+
+            <p>No, Flashlight is not revolutionary. It's not even all that fun. But one day, I will make a fun, addictive game using the knowledge I have gained from this experience.</p>
+			
+			<p>My goal for August 2017 will be to continue to develop Widget CEO. I also plan to look more into enrolling in school for a CS degree.</p>
+           
+            <h2>Fitness</h2>
+            <p>In July 2017, my overall fitness hours totalled to <strong>23.25</strong> hours. I spent <strong>9.25</strong> hours lifting weights, and I spent <strong>14</strong> hours running and cycling for cardio. My average lifting hours per week was <strong>2.09</strong> hours, and my average cardio hours per week was <strong>3.16</strong> hours.</p>
+			
+			<p>The reason my lifting hours were so low (aside from my vacation), is because I injured my lower back. It's not a serious injury, but better safe than sorry.</p>
+
+            <p>My fitness goals for the month were to maintain strength and lose a small amount of weight. I failed in both of my goals. Oh well, I guess I'll have to make up for it in August.</p>
+			
+			<p>Here is a graph of my daily weight throughout July (I did not weigh myself while on vacation and on a couple other days):</p>
+
+            <img class="img-responsive banner-img" src="{% static '/charts_and_graphs/July2017_bodyweight_daily.png' %}" alt="July Body Weight Daily" />
+
+            <p>As far as lifting goes, I hurt my lower back doing deadlifts/squats, so I've been taking it easy for the past couple of weeks. I assume I have lost some strength during that time. No big deal. I'll be back at
+			 it at 100% soon enough.</p>
+            <h2>Other</h2>
+            <p>In this past month, I spent <strong>2.75</strong> hours doing other productive stuff.</p>
+            <h2>Student Loan Repayment</h2>
+            <p>Last month, my goal was to put <span style="color: #339966;">$1000</span> toward my debt. I more than doubled that amount.</p>
+
+            <p>In the month of July 2017, I paid <span style="color: #339966;">$2500</span> toward my student loan debt, which currently rests at a total of <span style="color: #ff0000;">$21,348.99</span>. Since graduating in May of 2016, I have put <span style="color: #339966;">$22,550</span> toward my student loan debt. That means I have paid off <span style="color: #339966;">$20,343.93</span> of the original <span style="color: #ff0000;">$41,692.92</span> total. (For those wondering about how the numbers add up, keep in mind that some of the money I pay toward my debt goes to paying off interest).</p>
+
+            <h2>Goals for next month (August 2017):</h2>
+            <h3>Software Dev Goals:</h3>
+            <ul>
+                <li>Work hard on my new game concept, Widget CEO.</li>
+            </ul>
+            <h3>Fitness Goals:</h3>
+            <ul>
+                <li>Lose a pound or two</li>
+                <li>Maintain strength on all lifts</li>
+            </ul>
+            <h3>Student Loan Repayment Goals:</h3>
+            <ul>
+                <li>Pay off at least $1500.</li>
+            </ul>
+
+        </div>
+        <div class="col-md-3"></div>
+    </div>
+</div>
+
+{% endblock %}
