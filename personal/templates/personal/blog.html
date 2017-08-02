@@ -12,6 +12,7 @@
             <h1 class="text-center" style="margin-top: -15px;">Blog Posts</h1>
 
 			{% load static %}
+			<a href="{% url 'posts' 'July2017' %}"><img class="img-responsive banner-img" src="{% static '/July2017.png' %}" alt="July 2017 Productivity Report" /></a>
             <a href="{% url 'posts' 'MayJune2017' %}"><img class="img-responsive banner-img" src="{% static '/MayJune2017.png' %}" alt="May/June 2017 Productivity Report" /></a>
             <a href="{% url 'posts' 'April2017' %}"><img class="img-responsive banner-img" src="{% static '/April2017.png' %}" alt="April 2017 Productivity Report" /></a>
             <a href="{% url 'posts' 'March2017' %}"><img class="img-responsive banner-img" src="{% static '/March2017.png' %}" alt="March 2017 Productivity Report" /></a>
