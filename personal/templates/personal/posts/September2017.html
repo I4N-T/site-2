@@ -1,0 +1,93 @@
+{% extends "personal/header.html" %}
+
+
+{% block content %}
+
+{% load static %}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-3"></div>
+
+        <div class="col-md-6" style="background-color: white;">
+            <h1 class="text-center" style="margin-top: -10px; padding-bottom: 5px;">Productivity Report - September 2017</h1>
+            <img class="img-responsive banner-img" src="{% static '/Sept2017.png' %}" alt="September 2017 banner" />
+
+            <p>Each Month, I make a post detailing what I’ve been working on, what I’ve accomplished, and just what I’ve been up to. This month's banner image features a rainbow outside my office window.</p>
+            <h2>Broad Overview</h2>
+            <p>September 2017 is the thirteenth month in which I have tracked my productivity. My productivity level this month was ok, considering I missed several days due to vacation and a business trip.
+			My main focus for the month was continuing to work on my office management game, tentatively titled Widget CEO.</p>
+            <ul>
+                <li>Fitness: <strong>26</strong> hours</li> 
+                <li>Software Development: <strong>47</strong> hours</li>
+				<li>Music: <strong>21.5</strong> hours</li>
+                <li>Other: <strong>6.75</strong> hours</li>
+                <li>Total productive hours: <strong>101.25</strong> hours</li>
+            </ul>
+            <p>My average amount of productive hours per day (from all categories) was <strong>3.27</strong> hours.</p>
+
+            <p>My productivity level for the month of September 2017 was about average. I guess I can't complain, but it feels like I could have done more.</p>
+            <h2>Software Development</h2>
+            <p>My software development goals for the month of September was to:</p>
+            <ul>
+                <li>Work hard on my new game, Widget CEO.</li>
+				
+            </ul>
+            <p>While I did put a decent amount of work into Widget CEO this month (47 hours), I unfortunately (again) have it in a bit of a broken state at the moment as I work on a new pathfinding algorithm. What that
+			means is that there will be no video this month.</p>
+			
+			<p>But now with the end of the year quickly approaching, I really need to decide what it is I want to do with Widget CEO. While it has been a great project, a tremendous learning experience, and has a ton of potential
+			to actually be a fun game, I think I will aim to wrap it up by the end of October. Now, I very well may come back to Widget CEO in the future, but I want to at least have something resembling a complete project by 
+			the end of the month. More or less, what I have left to implement are pathfinding, title screen, some balancing, and a few other minor details. </p>
+			
+			<p>My goal for October 2017 will be to bring Widget CEO to a (temporary?) close.</p>
+           
+            <h2>Fitness</h2>
+            <p>In September 2017, my overall fitness hours totalled to <strong>26</strong> hours. I spent <strong>18.5</strong> hours lifting weights, and I spent <strong>7.5</strong> hours running and cycling for cardio. My average lifting hours per week 
+			was <strong>4.32</strong> hours, and my average cardio hours per week was <strong>1.75</strong> hours.</p>
+			
+			<p>I switched up my lifting routine again. Now I am doing a short full body routine 4 days a week. I'll give an update in next month's report with how it's working out for me.<p>
+			
+			<p>Here is a graph of my daily weight throughout September (I missed a few days):</p>
+
+            <img class="img-responsive banner-img" src="{% static '/charts_and_graphs/Sept2017_bodyweight_daily.png' %}" alt="September Body Weight Daily" />
+
+            <p>Overall, I think I gained a little bit. Not much change (which is A-OK with me).</p>
+			
+			<p>My goal for the month was to workout regularly. I think I did so for the most part. This goal will stand for October as well.</p>
+			
+			<h2>Music</h2>
+			<p>It's been about two months now since I've been practicing music composition every Tuesday and Friday. I still don't really know what I'm doing. So far I'm mostly just playing around with different sounds and
+			techniques.</p>
+						 
+			 <p>Here are a couple of songs I made during September 2017:</p>
+			 
+			 <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/345565297&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true"></iframe>
+			 <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/345564769&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true"></iframe>			  
+			
+            <h2>Other</h2>
+            <p>In this past month, I spent <strong>6.75</strong> hours doing other productive stuff.</p>
+            <h2>Student Loan Repayment</h2>
+            <p>Last month, my goal was to put <span style="color: #339966;">$500</span> toward my debt. That is what I did.</p>
+
+            <p>In the month of September 2017, I paid <span style="color: #339966;">$500</span> toward my student loan debt, which currently rests at a total of <span style="color: #ff0000;">$19,713.36</span>. Since graduating in May of 2016, I have put <span style="color: #339966;">$24,300</span> toward my student loan debt. That means I have paid off <span style="color: #339966;">$21,979.56</span> of the original <span style="color: #ff0000;">$41,692.92</span> total. (For those wondering about how the numbers add up, keep in mind that some of the money I pay toward my debt goes to paying off interest).</p>
+
+            <h2>Goals for next month (October 2017):</h2>
+            <h3>Software Dev Goals:</h3>
+            <ul>
+                <li>Work hard on my new game concept, Widget CEO, and bring it to a close.</li>
+            </ul>
+            <h3>Fitness Goals:</h3>
+            <ul>
+                <li>Work out regularly</li>
+            </ul>
+            <h3>Student Loan Repayment Goals:</h3>
+            <ul>
+                <li>Pay off at least $500.</li>
+            </ul>
+
+        </div>
+        <div class="col-md-3"></div>
+    </div>
+</div>
+
+{% endblock %}
