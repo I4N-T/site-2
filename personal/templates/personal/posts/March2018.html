@@ -1,0 +1,104 @@
+{% extends "personal/header.html" %}
+
+
+{% block content %}
+
+{% load static %}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-3"></div>
+
+        <div class="col-md-6" style="background-color: white;">
+            <h1 class="text-center" style="margin-top: -10px; padding-bottom: 5px;">Productivity Report - March 2018</h1>
+            <img class="img-responsive banner-img" src="{% static '/March2018.png' %}" alt="March 2018 banner" />
+
+            <p>Each Month, I make a post detailing what I’ve been working on, what I’ve accomplished, and just what I’ve been up to.</p>
+            <h2>Broad Overview</h2>
+            <p>March 2018 is the 19th month in which I have tracked my productivity. I spend the first part of the month finishing up my Java Programming 2 class. After
+			 that I began working on an Android app tentatively titled the Inspiration Generator.</p>
+            <ul>
+                <li>Fitness: <strong>24</strong> hours</li> 
+                <li>Software Development: <strong>35.75</strong> hours</li>
+				<li>Music/Art: <strong>6.75</strong> hours</li>
+                <li>Other: <strong>2</strong> hours</li>
+                <li>Total productive hours: <strong>68.5</strong> hours</li>
+            </ul>
+            <p>My average amount of productive hours per day (from all categories) was <strong>1.99</strong> hours.</p>
+
+            <p>This March was one of the least productive months I have had in a while. What are my excuses? Well, I had friends visit one weekend, so that took away
+			 some of my productive time. But really, I have no good excuse. After finishing my class, I just got a little lazy. Nevertheless, I did get some stuff done 
+			 this past month, and I feel well rested and ready to get back to work in April.</p>
+            <h2>Software Development</h2>
+            <p>My software development goal for the month of March 2018 was to:</p>
+            <ul>
+				<li>Work hard in my Java Programming class.</li>
+			</ul>
+				
+			<p>Mission accomplished. I completed the course early with perfect credit. I actually had a lot of fun with some of the homework assignments for the course, 
+			since many of the assignments involved making games. Throughout the course, I used Java to create Tic-Tac-Toe, Battleship, Blackjack, and some other less common 
+			games.</p>
+				 			
+			<p>After finishing up with the final assignment around the middle of the month, I got to work on my Inspiration Generator app. The basic idea is that the user 
+			will select which type of art he/she is looking to create (music, visual art, literature), and the app will provide the user with some random art of a different 
+			category to prompt them with some inspiration. For example, if the user needs some inspiration to create a piece of music, the app will provide a random word and 
+			a random visual art piece (pulled from Reddit's Art subreddit).</p>
+           
+            <h2>Fitness</h2>
+            <p>In March 2018, my overall fitness hours totalled to <strong>24</strong> hours. I spent <strong>15.25</strong> hours lifting weights, and I spent <strong>8.75</strong> hours running and cycling (on the machine) for
+			cardio. My average lifting hours per week was <strong>3.44</strong> hours, and my average cardio hours per week was <strong>1.98</strong> hours.</p>
+			
+			<p>There was no significant weight gain or loss this month.<p>
+			
+			<h2>Music/Art</h2>
+			<p>This month I took a break from music and gave drawing a try. I split my time between working through Andrew Loomis's book Fun with a Pencil and practicing drawing whatever I felt like.
+         	 Honestly, I was not enjoying art so much, although I do think it would be a useful skill to have. Either way, moving forward, I will probably go back to focusing on music production 
+			 every Tuesday and Friday.</p>	 
+			 	
+            <h2>Other</h2>
+            <p>In this past month, I spent <strong>2</strong> hours doing other productive stuff.</p>
+			
+			<p>Well, maybe that is a bit of an understatement. While I did not record it, I do think the time I spend this month on cleaning and decorating my office could be considered productive.
+			 Specifically, I got a myself a new (used) Herman Miller chair, an American flag, a poster, a large bulletin board, and a whiteboard. The bulletin board and whiteboard have already 
+			 proven useful. Check it out:</p>
+			 
+			 <img class="img-responsive banner-img" src="{% static '/other/officeFlag.png' %}" alt="Flag and Poster" />
+			 <img class="img-responsive banner-img" src="{% static '/other/officeBoards.png' %}" alt="Bulletin board and whiteboard" />
+			 
+			
+			<h2>Books</h2>
+			<p>This month I have been reading The Algorithm Design Manual by Steven Skiena. So far, I can say that this book contains a ton of useful information, and will perhaps be useful
+			to me in the future as a reference on data structures and algorithms. Since I am not actually working through any of the example problems in the book, I know that I am not getting the
+			most out of it; but I do think there is some value to be gained through a light reading like I am doing.</p>
+			
+			
+            <h2>Student Loan Repayment</h2>
+            <p>This month, I paid another <span style="color: #339966;">$500</span> toward my debt. </p>
+
+            <p>In the month of March 2018, I paid <span style="color: #339966;">$500</span> toward my student loan debt, which currently rests at a total of <span style="color: #ff0000;">$16,973.24</span>. Since graduating in May of 2016, I 
+			have put <span style="color: #339966;">$27,300</span> toward my student loan debt. That means I have paid off <span style="color: #339966;">$24,719.68</span> of the original <span style="color: #ff0000;">$41,692.92</span> total.</p>
+
+            <h2>Goals for next month (April 2018):</h2>
+            <h3>Software Dev Goals:</h3>
+            <ul>
+                <li>Work hard on my Inspiration Generator App.</li>
+				<li>Participate in Ludum Dare 41</li>
+            </ul>
+            <h3>Fitness Goals:</h3>
+            <ul>
+                <li>null</li>
+            </ul>
+			<h3>Music Goals:</h3>
+            <ul>
+                <li>null</li>
+            </ul>
+            <h3>Student Loan Repayment Goals:</h3>
+            <ul>
+                <li>null</li>
+            </ul>
+
+        </div>
+        <div class="col-md-3"></div>
+    </div>
+</div>
+
+{% endblock %}
