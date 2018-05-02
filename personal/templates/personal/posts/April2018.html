@@ -1,0 +1,114 @@
+{% extends "personal/header.html" %}
+
+
+{% block content %}
+
+{% load static %}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-3"></div>
+
+        <div class="col-md-6" style="background-color: white;">
+            <h1 class="text-center" style="margin-top: -10px; padding-bottom: 5px;">Productivity Report - April 2018</h1>
+            <img class="img-responsive banner-img" src="{% static '/April2018.png' %}" alt="April 2018 banner" />
+
+            <p>Each Month, I make a post detailing what I’ve been working on, what I’ve accomplished, and just what I’ve been up to.</p>
+            <h2>Broad Overview</h2>
+            <p>April 2018 is the 20th month in which I have tracked my productivity. Early in the month, I successfully launched my first app, Sympiphany, to the Google Play store. After that,
+			I began work on another app, using the Microsoft Face API. I also made a game for Ludum Dare 41.</p>
+            <ul>
+                <li>Fitness: <strong>35.5</strong> hours</li> 
+                <li>Software Development: <strong>48.5</strong> hours</li>
+				<li>Music/Art: <strong>1</strong> hours</li>
+                <li>Other: <strong>4.5</strong> hours</li>
+                <li>Total productive hours: <strong>89.5</strong> hours</li>
+            </ul>
+            <p>My average amount of productive hours per day (from all categories) was <strong>2.89</strong> hours.</p>
+
+            <p>I feel pretty good about April. Mobile development is something that I've been wanting to get into for a long time now, so it feels great to actually have my own app on the Play store.
+			<a href="https://play.google.com/store/apps/details?id=me.ianterry.inspiration">You can check out Sympiphany here.</a></p>
+			
+            <h2>Software Development</h2>
+            <p>My software development goals for the month of April 2018 were to:</p>
+            <ul>
+				<li>Work hard on my Inspiration Generator App.</li>
+                <li>Participate in Ludum Dare 41</li>
+			</ul>
+				
+			<p>Check one and check two. As mentioned above, I finished with my Inspiration Generator App, which is titled Sympiphany. Originally the plan was to make an app that can provide
+			 inspiration for various modes of artistry; but eventually I decided to trim it down to just musical inspiration. So what is Sympiphany and how does it work?</p>
+			
+			<img class="img-responsive banner-img" src="{% static '/other/feature_img.png' %}" alt="Sympiphany" />
+							
+			<p>Sympiphany provides the user with a random theme word, a random key, and a random piece of art (pulled from r/Art using the Reddit API). For the most part, this was a simple app
+			to make, but it definitely gave me some valuable experience with Android development. Getting the Reddit stuff to work like I wanted was a bit difficult, but I eventually figured it 
+			out. Through struggling with the Reddit API, I also got some practice parsing JSON with Java/Android. I have a feeling that's going to come in handy in the future.</p>
+			
+			<p>Moving on to Ludum Dare. I was really psyched for LD41, since I hadn't done any game development in several months. I had an itch that needed to be scratched. Unfortunately, I can't 
+			help but feel slightly disappointed in my submission this time. I over-scoped. I knew from the start that my game idea was too ambitious, but it's a game idea that I've had before, it 
+			fit the theme, and I figured I'd just take it as far as I can. If I end up with an unplayable mess - so be it. And that's sort of how it went. Of course, no amount of hard work is for 
+			naught. This little project gave me a quick brushing up on my Unity skills, and it gave me a starting point should I ever decide to explore the tactics genre again in the future.</p>
+			
+			<p>Ok, enough rambling. What even did I make? I call it Basketball Tactics - a turn based tactical basketball experience.</p>
+			
+			<img class="img-responsive banner-img" src="{% static '/other/bballtactics.png' %}" alt="Basketball Tactics" />
+			
+			<p>The theme for LD41 was "Combine 2 incompatible genres". I chose to make a game combining turn-based tactics and sports. The basic idea of the game is that, for each turn, you make a move 
+			with each player of your team (move, shoot, pass, etc), all of which is controlled by the players' stats. Then the enemy team would make their moves and so on until one team has reached a 
+			score of 21 or whatever. Well, that sounds like it could be fun, but I didn't get to implement all of that. What we end up with is a (prototype of a) game where you can move, pass, or shoot 
+			with each player of your team, and none of the stats matter except Speed and Two-Pointers. Oh and the other team? Yeah... there is no other team. Making an even halfway functional AI for 
+			a game like this would probably take me at least a week (and that's being generous).</p>
+			
+			<p><a href="https://i4n-t.itch.io/basketball-tactics">You can "play" the game on itch here.</a></p> 
+			<p><a href="https://ldjam.com/events/ludum-dare/41/basketball-tactics">And here is the game's Ludum Dare page.</a></p>
+           
+		    <p>Currently I am working on an app that will replace your face in any picture with an Emoji matching the emotion shown on your face. The main idea with this project is to get some 
+			experience using different API's. The main brain behind the functionality of the app is the Microsoft Face API. The app will also use the Facebook API to allow for picture sharing.</p>
+			
+            <h2>Fitness</h2>
+            <p>In April 2018, my overall fitness hours totalled to <strong>35.5</strong> hours. I spent <strong>21.25</strong> hours lifting weights, and I spent <strong>14.25</strong> hours running and cycling for
+			cardio. My average lifting hours per week was <strong>4.96</strong> hours, and my average cardio hours per week was <strong>3.33</strong> hours.</p>
+			
+			<p>Spring finally arrived here in late April, and that means cycling season is back! I did a quick ~22 mile inaugural ride to the lake shore and back, and the next weekend I kicked it 
+			up a notch to ~29 miles. My top ride last year was around 50 miles. Let's see if I can beat that this year.<p>
+			
+			<h2>Music/Art</h2>
+			<p>I did not spend much time on music this month - only 1 hour. As such, I don't have anything to share. Hopefully by next month I will have something new.</p>	 
+			 	
+            <h2>Other</h2>
+            <p>In this past month, I spent <strong>4.5</strong> hours doing other productive stuff.</p>
+			 		
+			<h2>Books</h2>
+			<p>This month I finished reading The Algorithm Design Manual by Steven Skiena. Well, I read the first half of the book. I skipped the catalogue of algorithmic problems. Really, this book is too heavy to be reading 
+			during lunch and cardio sessions. I do think I'm taking away some knowledge, but I know I'm not doing the book justice.</p>
+			
+			<p>Currently I am reading Snow Crash by Neal Stephenson. Being about halfway through the book, I can already say this might be one of my favorite books of all time. I can't wait to see what happens next.</p>
+			
+            <h2>Student Loan Repayment</h2>
+            <p>I know longer am focused on student loan repayment as a goal. Actually, I haven't been focused on this for a few months now. My loans have low enough interest rates that I am confident the best financial decision 
+			for me now is to just pay the minimum payment each month.</p>
+
+            <h2>Goals for next month (May 2018):</h2>
+            <h3>Software Dev Goals:</h3>
+            <ul>
+                <li>Work hard on my facial recognition app</li>
+            </ul>
+            <h3>Fitness Goals:</h3>
+            <ul>
+                <li>lose a pound or two</li>
+            </ul>
+			<h3>Music Goals:</h3>
+            <ul>
+                <li>null</li>
+            </ul>
+            <h3>Student Loan Repayment Goals:</h3>
+            <ul>
+                <li>just pay the minimum payment</li>
+            </ul>
+
+        </div>
+        <div class="col-md-3"></div>
+    </div>
+</div>
+
+{% endblock %}
