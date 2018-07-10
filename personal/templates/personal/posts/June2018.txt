@@ -1,0 +1,145 @@
+{% extends "personal/header.html" %}
+
+
+{% block content %}
+
+{% load static %}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-3"></div>
+
+        <div class="col-md-6" style="background-color: white;">
+            <h1 class="text-center" style="margin-top: -10px; padding-bottom: 5px;">Productivity Report - June 2018</h1>
+            <img class="img-responsive banner-img" src="{% static '/June2018.png' %}" alt="June 2018 banner" />
+
+            <p>Each Month, I make a post detailing what I’ve been working on, what I’ve accomplished, and just what I’ve been up to.</p>
+            <h2>Broad Overview</h2>
+            <p>June 2018 is the 22nd month in which I have tracked my productivity. Overall productivity hours for the month were not great but not terrible. I did get my latest app up on the
+			Play Store, so that's something to be happy about.</p>
+            <ul>
+                <li>Fitness: <strong>46.00</strong> hours</li> 
+                <li>Software Development: <strong>27.75</strong> hours</li>
+				<li>Music/Art: <strong>8.75</strong> hours</li>
+                <li>Other: <strong>1.25</strong> hours</li>
+                <li>Total productive hours: <strong>83.25</strong> hours</li>
+            </ul>
+            <p>My average amount of productive hours per day (from all categories) was <strong>2.78</strong> hours.</p>
+
+			
+            <h2>Software Development</h2>
+            <p>My software development goal for the month of June 2018 was to:</p>
+            <ul>
+				<li>Work hard on EmojiPhoto app, and release it on the Play store</li>
+			</ul>
+				
+			<p>I did indeed release EmojiPhoto on the Play Store. <a href="https://play.google.com/store/apps/details?id=me.ianterry.face">Click here to see the listing!</a></p>
+			
+			<img class="img-responsive banner-img" src="{% static '/other/feature_graphic-01.png' %}" alt="EmojiPhoto" />
+			
+			
+			<p>While EmojiPhoto was not really all that complex an app to make, it definitely was a great learning experience for me. I am actually starting to feel somewhat comfortable with
+			 Android development. I mean, I know that I don't know anything really, but I did make a couple of simple apps so that's something.</p>			
+							       
+		    <p>Unfortunately, there is an important feature missing from EmojiPhoto. While the app does allow you to share your emojified photos on Facebook or Twitter, I neglected to implement
+			 sharing with contacts (like sharing with someone through text if you have their phone number). My goal for July will be to update EmojiPhoto with this functionality.</p>
+			 
+			 <p>So what else did I work on this month? I started to make an app that allows you to take a picture of a grocery receipt, converts the image text to real text, then searches for
+			  recipes using ingredients found on the receipt. Eventually I realized that the main recipe searching API I was playing with (Edamam) would not be able to perform the type of 
+			  query I wanted to do without a whole lot of additional coding on my end. I looked around at some other recipe APIs that offered the functionality I needed, but free usage of
+			   these APIs was too limited (as in it would have cost me money to use). So I pivoted.</p>
+			   
+			 <p>My next idea was to make the app read the grocery receipt and export the items and prices to csv format (in other words, make an Excel document). I was able to get something up 
+			 and running, but the problem was that the text pulled from the image (via Microsoft Cognitive OCR) was not consistently accurate. Also, the order in which the words/numbers were pulled
+			 from the image was not in item-price-item-price ordering, so it would have required a lot of complicated coding for me to get something even remotely accurate working. Honestly, I think
+			 an app like this could be made, but I just don't have the passion for it. In summary, I dropped this project.</p>
+			 
+			 <p>All that time spent working on an indefinitely incomplete app was not wasted though. I did manage to learn a thing or two, get some more experience implementing various APIs, and I
+			 got some more good general app development and coding experience to boot.</p>
+			
+            <h2>Fitness</h2>
+            <p>In June 2018, my overall fitness hours totalled to <strong>46.00</strong> hours. I spent <strong>20.50</strong> hours lifting weights, and I spent <strong>25.5</strong> hours running and cycling for
+			cardio. My average lifting hours per week was <strong>4.78</strong> hours, and my average cardio hours per week was <strong>5.95</strong> hours.</p>
+			
+			<p>Over the course of the month, I lost about 10 lbs. I went from 202.6 lbs on June 1 to 190.8 lbs on June 30. I can already tell you that there's been a bit of setback as of the first
+			 week of July, when I was on vacation, but we'll save that for next month's blog.<p>
+			 
+			<p>So I guess this would be a good place to mention another sort of project I have been working on. Starting sometime in early June, I began to eat an entirely plant-based diet (with
+			 the exception of fish/shellfish once or twice each week). I know some people are going to want an explanation, so let's start with the why:</p>
+			 
+			 <p>Why am I doing this?</p>
+			 <ul>
+				<li>There is a lot of conflicting information out there about what the healthiest possible diet is. Many say that meat is essential, and many say that meat
+				is either outright bad for you or just not necessary. I decided that I ought to test it out for myself and see what happens.</li>
+				<li>Plant-based diets are very anti-inflammatory compared to omnivorous diets. I have a theory that my chronic lower-back pain may be caused primarily by inflammation. If a 
+				plant-based diet can cure my back pain, then I will probably never eat meat again.</li>
+				<li>Could a plant-based diet allow me to lose weight past my usual limit around 190 lbs?</li>
+				<li>A plant-based diet will force me to try new meals, vegetables, fruits, legumes, etc.</li>
+			</ul>
+			
+			<p>Ok so now you know why I've changed my diet, but what effects have I seen so far?</p>
+			<ul>
+				<li>I was able to easily lose at least 10 lbs in one month. For me, that isn't necessarily anything unusual. I've done it before many times while eating meat. Time will tell
+				if there is really something to this. If I can actually get down to 185 lbs or so, then I can definitely say that this diet is great for weight loss.</li>
+				<li>My skin got smoother/younger looking. When I first noticed it, I thought it might just be in my head, but then my girlfriend also commented on it (without me saying anything
+				 about it).</li>
+			</ul>
+			
+			<p>And that's about it. I don't feel any different overall. But keep in mind that I am only 3 weeks into this new diet, so maybe I will notice more changes in the future.</p>
+			
+			<p>You might be wondering, what am I actually eating?</p>
+			<ul>
+				<li>For breakfast everyday I have oatmeal with vegan protein powder, chia seeds, ground flax seed, cinnamon, almond milk, and frozen blueberries</li>
+				<li>Lunch, after-work meal, and dinner are all the same types of meals - typically:</li>
+				<li>a legume (black beans, chickpeas, lentils), some vegetables (broccoli, squash, brussel sprouts, cauliflower, eggplant, carrots, beets, onions, tomatoes), and spices (tumeric, cumin,
+				 cayenne pepper, black pepper, salt, paprika, garlic powder, onion powder), and leafy greens (kale, spinach, etc). Sometimes I add protein powder to this type of meal.</li>
+				<li>I typically eat one apple every day</li>
+				<li>after dinner I always have a protein shake with 1 scoop of vegan protein powder, 1 banana, 1/2 teaspoon chia seeds, 1 tablespoon ground flax seed, some cinnamon, 2 ice cubes,
+				 and some almond milk</li>
+				<li>Usually one night every week I will have some sort of seafood (tuna, sardines, mussels, salmon) with whole-wheat pasta</li>
+				<li>I take fish oil pills three times daily, unless I am actually eating fish that day.</li>
+				<li>I take a multivitamin every morning.</li>
+				<li>For snacks I have nuts, trail mix, apples, or bananas.</li>
+				<li>If I want something sweet (aside from my nightly shake) I might drizzle some honey over almonds or walnuts.</li>
+			</ul>
+			 
+			 <p>Now in case you were wondering how the cost of this diet compares to my usual diet, I would say that this mostly plant-based diet is, in fact, more expensive. But not by much.
+			  Actually, the only reason it is more expensive is because of the chia seeds and flax seeds and frozen blueberries. If I didn't eat those things, I think this diet would be less 
+			  expensive.</p>
+			  
+			 <p>Next month I will provide another update on how the new diet is going.</p>
+			
+			<h2>Music/Art</h2>
+			<p>I spent 8.75 hours on music this past month. I have some new stuff I could upload, but I just haven't done it yet.</p>	 
+			 	
+            <h2>Other</h2>
+            <p>In this past month, I spent <strong>1.25</strong> hours doing other productive stuff.</p>
+			 		
+			<h2>Books</h2>
+			 <p>Early in the month I finished reading <a href="https://www.goodreads.com/book/show/34272565-life-3-0"><u>Life 3.0: Being Human in the Age of Artificial Intelligence.</u></a>. 
+			 I give this book 3/5 stars. It was ok. It was interesting, but at the same time I end up feeling like I didn't learn much.</p>
+			 
+			 <p>Next I started to read <a href="https://www.goodreads.com/book/show/79424.The_Way_of_the_Superior_Man"><u>The Way of the Superior Man</u></a> by David Deida. So far, it is 
+			 an ok book, but I do not think I am getting much value from it. I agree with the overall message for the most part, but it kind of feels like I am reading a self-help book for 
+			 something I don't need help with.</p>
+				
+            <h2>Goals for next month (July 2018):</h2>
+            <h3>Software Dev Goals:</h3>
+            <ul>
+                <li>Update EmojiPhoto with text-message sharing functionality</li>
+            </ul>
+            <h3>Fitness Goals:</h3>
+            <ul>
+                <li>continue trend of weight loss</li>
+				<li>continue with plant-based + fish diet</li>
+            </ul>
+			<h3>Music Goals:</h3>
+            <ul>
+                <li>null</li>
+            </ul>
+
+        </div>
+        <div class="col-md-3"></div>
+    </div>
+</div>
+
+{% endblock %}
