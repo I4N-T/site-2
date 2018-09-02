@@ -1,0 +1,108 @@
+{% extends "personal/header.html" %}
+
+
+{% block content %}
+
+{% load static %}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-3"></div>
+
+        <div class="col-md-6" style="background-color: white;">
+            <h1 class="text-center" style="margin-top: -10px; padding-bottom: 5px;">Productivity Report - August 2018</h1>
+            <img class="img-responsive banner-img" src="{% static '/August2018.png' %}" alt="August 2018 banner" />
+
+            <p>This month's banner features .</p>
+            <h2>Broad Overview</h2>
+            <p>August 2018 is the 24th month in which I have tracked my productivity. That's 2 whole years! Well, this month was a good one I'd say. Let's look at the numbers.</p>
+            <ul>
+                <li>Fitness: <strong>61.75</strong> hours</li> 
+                <li>Software Development: <strong>62.25</strong> hours</li>
+				<li>Music/Art: <strong>1</strong> hours</li>
+                <li>Other: <strong>4.5</strong> hours</li>
+                <li>Total productive hours: <strong>129.5</strong> hours</li>
+            </ul>
+            <p>My average amount of productive hours per day (from all categories) was <strong>4.18</strong> hours.</p>
+
+			
+            <h2>Software Development</h2>
+            <p>My software development goals for the month of August 2018 were:</p>
+            <ul>
+				<li>prepare/study for class (begins 8/27/2018)</li>
+				<li>Make a game for Ludum Dare 42 (begins 8/10/2018)</li>
+			</ul>
+				
+			<p>Let's start with Ludum Dare 42. The theme this time was "running out of space". I made an infinite runner called Sky Runner; and honestly I think this might be my best LD entry yet. Here are 
+			the links:</p>
+			<ul>
+				<li><a href="https://i4n-t.itch.io/sky-runner">Click here to play Sky Runner in your browser!</a></li>
+				<li><a href="https://ldjam.com/events/ludum-dare/42/sky-runner">Ludum Dare page</a></li>
+				<li>Gameplay video: <iframe width="560" height="315" src="https://www.youtube.com/embed/HEloh_wO1DM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></li>
+			</ul>
+			<p>So I made a cool little game, thus succeeding in one of my goals, and so everything is just great, right? Well, not exactly. There was a very unfortunate dark event that occurred as 
+			I attempted to make the initial commit of the game's source code to GitHub. Everything was deleted. All that code that I would love to reuse later - gone. On the bright side, I did have the 
+			foresight to create a web-build of the game before all this happened, so that is why the game is still available to play. However, since the source code is gone, I feel like I won't be able to 
+			list this game on my projects page. Oh well. After some investigation, I think I mostly understand what I did wrong; at least I am sure that I understand enough to not accidentally delete 
+			everything again in that way. Really, this is a blessing in disguise. I am grateful for this opportunity to learn more about git.</p>		
+
+            <p>Ok, moving on. How did I prepare for class before it began? I started by reading the first three chapters in the textbook. Then I started reading <u>Discrete Mathematics and it's Applications</u> 
+			by Kenneth Rosen. This book, and discrete math in general, gives a lot of great information on data structures and algorithms, or rather the mathematics underlying these concepts. This is probably 
+			where the largest part of my software development hours come from this month - reading this book and working through example problems.</p>
+
+            <p>I started class on August 27, and so far so good. The class seems to be structured well, and I can tell the professor knows the subject well. Since all of the material and assignments 
+			have already been made available, I may be able to finish the class early. I am not aiming to finish early though; I really want to take my time and make sure I have a deep understanding 
+			of the material.</p>			
+							       			
+            <h2>Fitness</h2>
+            <p>In August 2018, my overall fitness hours totalled to <strong>61.75</strong> hours. I spent <strong>26.00</strong> hours lifting weights, and I spent <strong>19.5</strong> hours running and cycling for
+			cardio. My average lifting hours per week was <strong>5.87</strong> hours, and my average cardio hours per week was <strong>4.40</strong> hours. I also started counting my stretching hours, which totalled 
+			to <strong>16.25</strong> hours.</p>
+			
+			<p>After another month on a plant-based + fish diet, I have continued to lose weight (slowly). I now weight somewhere around 182 lbs. This is the lightest I have been since high school. 
+			I am unsure whether or not I am still losing weight, since the weight loss has slowed dramatically. By middle of next month, I should know if I am still losing weight. By the way, one 
+			thing I didn't consider before is the fact that I have pretty much stopped using oil to cook. I wonder if I would have lost just as much weight on my regular omnivore diet if I had stopped 
+			using oil.<p>
+			 
+			<p>As far as other benefits, I haven't noticed anything. My skin is still better, so that's nice. I do not think this diet has helped much, if any, with my back pain. Honestly, it is hard 
+			to discern. Nevertheless, I will continue with this diet, because I enjoy the food I'm eating.</p> 
+			  
+			<p>Are there any downsides to this plant-based + fish diet? Well, maybe. Lately I feel that I get light-headed more easily when I stand up too fast. Of course, this could easily just be 
+			due to the fact that I've lost so much weight so quickly, and my body isn't use to this little amount of calories. I can not reasonably attribute this to the particular foods I am eating 
+			(or not eating).</p>
+			
+			<h2>Music/Art</h2>
+			<p>Last month I said I would probably omit this section for this month. Because of Ludum Dare 42, I actually did create a new song. Keep in mind that I made this in about 1 hour, so the 
+			quality reflects that.</p>	 
+			
+			<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/493835343&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+			 	
+            <h2>Other</h2>
+            <p>In this past month, I spent <strong>4.5</strong> hours doing other productive stuff.</p>
+			 		
+			<h2>Books</h2>		  
+			 <p>This month I read <a href=https://www.goodreads.com/book/show/30289.The_Republic?from_search=true"><u>The Republic</u></a> by Plato, translated by Allan Bloom. This book also includes 
+			 an interpretive essay by Allan Bloom, which I still am in the process of reading.</p>
+			 
+			 <p><u>The Republic</u> is a very thought provoking book. In it, Plato (through the mouth of Socrates), investigates the meaning of justice. The investigation leads the reader on a long 
+			 and winding road through a whole bunch of different topics of philosophy. Most notably, this book details the founding of a hypothetical "good" city - a city that is perfectly just. By 
+			 making this city analogous to the individual man, it is then examined the nature of a perfectly just man. Throughout all of this, there seems to be quite an emphasis on education - in how 
+			 the just man (and citizen of the just city) must be educated from the time of youth on into adulthood.</p>
+			 
+			 <p>I can safely say that reading <u>The Republic</u> has even furthered my interest in philosophy, particularly in political philosophy and philosophy of education. However, for now 
+			 I am unsure of how much time I will have to devote to reading outside of computer science related stuff. I will continue to read and study in philosophy as often as I feel I can spare.</p>
+				
+            <h2>Goals for next month (September 2018):</h2>
+            <h3>Software Dev Goals:</h3>
+            <ul>
+                <li>Work hard in my Data Structures and Algorithms class. Take the time to really learn this material.</li>
+            </ul>
+            <h3>Fitness Goals:</h3>
+            <ul>
+				<li>continue with plant-based + fish diet</li>
+            </ul>
+        </div>
+        <div class="col-md-3"></div>
+    </div>
+</div>
+
+{% endblock %}
