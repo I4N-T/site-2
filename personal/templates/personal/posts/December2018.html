@@ -1,0 +1,109 @@
+{% extends "personal/header.html" %}
+
+
+{% block content %}
+
+{% load static %}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-3"></div>
+
+        <div class="col-md-6" style="background-color: white;">
+            <h1 class="text-center" style="margin-top: -10px; padding-bottom: 5px;">Productivity Report - December 2018</h1>
+            <img class="img-responsive banner-img" src="{% static '/December2018.png' %}" alt="December 2018 banner" />
+
+            <p>This month's banner features my Christmas tree.</p>
+            <h2>Broad Overview</h2>
+            <p>December 2018 is the 28th month in which I have tracked my productivity.</p>
+            <ul>
+                <li>Fitness: <strong>15</strong> hours</li> 
+                <li>Software Development: <strong>18.75</strong> hours</li>
+				<li>Music/Art: <strong>3.25</strong> hours</li>
+                <li>Other: <strong>1</strong> hours</li>
+                <li>Total productive hours: <strong>38</strong> hours</li>
+            </ul>
+            <p>My average amount of productive hours per day (from all categories) was <strong>26.85</strong> hours.</p>
+
+			
+            <h2>Software Development</h2>
+            <p>My software development goal for the month of December 2018 was:</p>
+            <ul>
+				<li>Complete final exam in Data Structures and Algorithms class.</li>
+			</ul>
+				
+			<p>Mission accomplished. My final grade for the course was 102/100. Now I'm looking forward to starting Programming Languages and Intro to Operating Systems in January. I may or may 
+			not withdraw from one of the classes if the workload seems too heavy. Both of these are generally considered to be difficult classes, so we'll just see how it goes.</p>
+			
+			<p>After I finished with the Data Structures and Algorithms class, for my next project I started to play around with <a href="www.jfugue.org">Jfugue</a>, which is an API for programmatic music production.
+			In particular, I was attempting to create a procedural rap beat generator. Honestly, I haven't made too much progress so far, but I may continue with this project when I have more time. In its current 
+			state, my program will generate a random chord progression and a drum pattern. The drum pattern generation could use some work, but it's a good start.</p>
+			
+			<p>My goal for January 2019 is just to work hard in my classes. I hate not having time to work on personal projects, but I'm learning a lot of good stuff in my classes that I will be 
+			able to incorporate into future projects.</p>
+				
+							       			
+            <h2>Fitness</h2>
+            <p>In December 2018, my overall fitness hours totalled to <strong>15</strong> hours. I spent <strong>9.5</strong> hours lifting weights, and I spent <strong>5.5</strong> hours running and cycling for
+			cardio. My average lifting hours per week was <strong>2.14</strong> hours, and my average cardio hours per week was <strong>1.24</strong> hours.</p>
+			
+			<p>My goal for the month was to put at least 18 hours into fitness. If you're any good at ciphering, you've probably already realized that I fell 3 hours short of my goal. What happened? 
+			Well, I was on vacation from December 21 to January 1, and I did not do anything much productive at all during that time - including exercise. I forgive myself. For what it's worth, I did 
+			exercise almost every day of the month leading up to my vacation. Unfortunately, <i>almost</i> every day isn't all that great. I should be exercising every single day.<p>
+			
+			<p>My goal for January will be to put at least 20 hours into fitness.</p>
+
+			<h2>Music/Art</h2>
+			<p>I spent 3.25 hours on music this month. Most of that time was spent working on lyrics.</p>
+
+			<p>Now I will make a confession - I am a rapper. So far I have fully produced 3 rap songs, meaning I made the beat and wrote and performed the lyrics. I have also written and performed
+			lyrics for maybe about 10 beats made by other producers. With that said, I will never post or link to any of my rap music on this website. This is my (semi-)professional website, and 
+            everything posted here will be of a (semi-)professional tone. I prefer to keep my lyrical creations separate from my professional life.</p>	 
+			 	
+            <h2>Other</h2>
+            <p>In this past month, I spent <strong>1</strong> hour doing other productive stuff (writing a blog entry).</p>
+			 		
+			<h2>Books</h2>		  
+			 <p>This past month I read <a href="https://www.goodreads.com/book/show/30292.Five_Dialogues"><b>Five Dialogues: Euthyphro, Apology, Crito, Meno, Phaedo</b></a> by Plato, translated by G.M.A. Grube. These five separate works,
+			 when looked at as a whole, paint a picture of Socrates's trial, imprisonment, and execution. Overall, I'd say each of these dialogues are a good read. Many suggest this collection as 
+			 an intro to philosophy as a whole, and I think that's probably not too bad an idea. A lot of topics are covered, and the entire collection is only 150-ish pages. In my opinion, none of 
+			 these dialogues can hold a candle to <b>The Republic</b>, but there is definitely some thought provoking stuff in there.</p>
+			 
+			 <p>Currently I am reading <a href="https://www.goodreads.com/book/show/5129.Brave_New_World"><b>Brave New World</b></a> by Aldous Huxley.</p>
+				
+            <h2>Goals for next month (January 2019):</h2>
+            <h3>Software Dev Goals:</h3>
+            <ul>
+                <li>Work hard in Programming Languages and Operating Systems classes.</li>
+            </ul>
+            <h3>Fitness Goals:</h3>
+            <ul>
+				<li>Put in at least 20 hours of lifting and/or cardio.</li>
+            </ul>
+			
+			<div id="disqus_thread"></div>
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_URL; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://ianterry.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+			
+        </div>
+        <div class="col-md-3"></div>
+    </div>
+</div>
+
+{% endblock %}
