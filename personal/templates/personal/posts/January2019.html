@@ -1,0 +1,105 @@
+{% extends "personal/header.html" %}
+
+
+{% block content %}
+
+{% load static %}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-3"></div>
+
+        <div class="col-md-6" style="background-color: white;">
+            <h1 class="text-center" style="margin-top: -10px; padding-bottom: 5px;">Productivity Report - January 2019</h1>
+            <img class="img-responsive banner-img" src="{% static '/January2019.png' %}" alt="January 2019 banner" />
+
+            <p>This month's banner features a scene of the Chicago skyline during the recent polar vortex. I found this picture on usatoday.com.</p>
+            <h2>Broad Overview</h2>
+            <p>January 2019 is the 29th month in which I have tracked my productivity.</p>
+            <ul>
+                <li>Fitness: <strong>28.25</strong> hours</li> 
+                <li>Software Development: <strong>41</strong> hours</li>
+				<li>Music/Art: <strong>4.75</strong> hours</li>
+                <li>Other: <strong>2.25</strong> hours</li>
+                <li>Total productive hours: <strong>76.25</strong> hours</li>
+            </ul>
+            <p>My average amount of productive hours per day (from all categories) was <strong>2.46</strong> hours.</p>
+
+			
+            <h2>Software Development</h2>
+            <p>My software development goal for the month of January 2019 was:</p>
+            <ul>
+				<li>Work hard in Programming Languages and Operating Systems classes.</li>
+			</ul>
+				
+			<p>So far, so good. We're only 3 weeks into class so far, but everything is going well. Programming Languages class is already more difficult than I expected, but I welcome the challenge.
+			 Operating Systems class is very interesting so far. There is a heavy focus on low level programming, and that's something I have wanted to learn more about. In fact, that is just 
+			 the type of thing I probably wouldn't have the motivation to learn on my own, so I'm glad that the class is required. So far, we've been learning a lot about Unix, which is another thing 
+			 I've been wanting to know more about - and now I have the opportunity. I'm looking forward to seeing what these classes have in store for me in the coming weeks.</p>
+			
+			<p>My goal for February 2019 will just be to continue to work hard in my classes. I may find some side project to work on as well, but I make no guarantees on that. My time is limited, after all.</p>
+				
+							       			
+            <h2>Fitness</h2>
+            <p>In January 2019, my overall fitness hours totalled to <strong>28.25</strong> hours. I spent <strong>18.75</strong> hours lifting weights, and I spent <strong>9.5</strong> hours on the exercise 
+			bike. My average lifting hours per week was <strong>4.23</strong> hours, and my average cardio hours per week was <strong>2.15</strong> hours.</p>
+			
+			<p>My goal for the month was to put at least 20 hours into fitness. I am very happy to say that I crushed that goal. I feel now that I am back into a good fitness routine. I am making progress 
+			in both strength and endurance, and I have been eating very well. During my vacation at the end of last month (December), I gained quite a bit of weight (as I usually do when I go on vacation). Since 
+			getting back home, I have been losing weight just ever so slightly - probably the slowest I've ever lost weight. I usually just lose weight as fast as possible, but I do like the way I've been doing 
+			it this past month. I've only lost about 3 lbs over the course of about 30 days, but I have definitely gained a decent amount of muscle and lost a decent amount of fat. For now, I will aim to keep 
+			this pace going.<p>
+			
+			<p>My goal for February is to just continue with what I've been doing.</p>
+
+			<h2>Music/Art</h2>
+			<p>I spent 4.75 hours on music this month. That time was split between producing a new beat and writing lyrics to go with it.</p>
+			 	
+            <h2>Other</h2>
+            <p>In this past month, I spent <strong>2.25</strong> hour doing other productive stuff like writing last month's blog entry.</p>
+			
+			<p>Late in this month, I also decided to try out meditation. I've only done it 4 times so far, for a total of about 45 minutes. My plan is to keep this going everyday throughout February 
+			to see how I like it. So far, I mean, it's ok. I've only been going for 10 minute sessions, which isn't a very long time (I think). I may or may not extend that time. I'll let you know 
+			how I like it in next month's blog entry.</p>
+			 		
+			<h2>Books</h2>		  
+			 <p>In January 2019 I finished reading <a href="https://www.goodreads.com/book/show/5129.Brave_New_World"><b>Brave New World</b></a> by Aldous Huxley. It was a pretty interesting read. I 
+			 guess the main theme is the contrast and conflict between individualism and collectivism. That's my take on it anyway. Obviously, there is a lot more that I could write about it, but I don't 
+			 feel like writing out a full book report here. I give it 3/5 stars.</p>
+				
+            <h2>Goals for next month (February 2019):</h2>
+            <h3>Software Dev Goals:</h3>
+            <ul>
+                <li>Work hard in Programming Languages and Operating Systems classes.</li>
+            </ul>
+            <h3>Fitness Goals:</h3>
+            <ul>
+				<li>null</li>
+            </ul>
+			
+			<div id="disqus_thread"></div>
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_URL; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://ianterry.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+			
+        </div>
+        <div class="col-md-3"></div>
+    </div>
+</div>
+
+{% endblock %}
