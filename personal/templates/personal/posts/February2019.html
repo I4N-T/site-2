@@ -1,0 +1,113 @@
+{% extends "personal/header.html" %}
+
+
+{% block content %}
+
+{% load static %}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-3"></div>
+
+        <div class="col-md-6" style="background-color: white;">
+            <h1 class="text-center" style="margin-top: -10px; padding-bottom: 5px;">Productivity Report - February 2019</h1>
+            <img class="img-responsive banner-img" src="{% static '/Feb2019.png' %}" alt="February 2019 banner" />
+
+            <p>This month's banner features my new pair of Red Wing Iron Rangers.</p>
+            <h2>Broad Overview</h2>
+            <p>February 2019 is the 30th month in which I have tracked my productivity.</p>
+            <ul>
+                <li>Fitness: <strong>29.25</strong> hours</li> 
+                <li>Software Development: <strong>34.75</strong> hours</li>
+				<li>Music/Art: <strong>2</strong> hours</li>
+                <li>Other: <strong>2.75</strong> hours</li>
+                <li>Total productive hours: <strong>68.75</strong> hours</li>
+            </ul>
+            <p>My average amount of productive hours per day (from all categories) was <strong>2.46</strong> hours.</p>
+
+			
+            <h2>Software Development</h2>
+            <p>My software development goal for the month of February 2019 was:</p>
+            <ul>
+				<li>Work hard in Programming Languages and Operating Systems classes.</li>
+			</ul>
+				
+			<p>So far, both classes are going well. Early on, the workload from both classes was very light, but it has 
+			picked up quite a bit in the last couple of weeks. I’m actually getting plenty of opportunity to code now 
+			with recent assignments. I’m really enjoying my Operating Systems class since it deals with system level 
+			code that I probably would not have gotten into learning on my own. Not much else to say about it for now. I will continue to work hard throughout next month.</p>
+			
+									       			
+            <h2>Fitness</h2>
+            <p>In February 2019, my overall fitness hours totalled to <strong>29.25</strong> hours. I spent <strong>21.5</strong> hours lifting weights, and I spent <strong>8.0</strong> hours on the exercise 
+			bike. My average lifting hours per week was <strong>5.31</strong> hours, and my average cardio hours per week was <strong>2.0</strong> hours.</p>
+			
+			<p>Since going plant-based+, I find it much more difficult to gain muscle. Even when I am sure I am eating a
+good amount of protein from varying sources (making sure to get a “complete” protein profile), muscle
+and strength gains just do not come to me as quickly as when I was eating meat. I also find it more
+difficult to maintain mass and strength when cutting. So where do I go from here?<p>
+			
+			<p>I am not ready to give up on this diet yet. I enjoy the food I eat, and there have been some minor
+benefits (like better skin). The main reason I am not willing to change it up at this moment is because
+the more research I do the more I think that a mostly plant-based diet is the healthiest diet in the long-
+term. Of course, there is no consensus on what constitutes the healthiest diet; in fact, there is a ton of
+disagreement. Either way, I’m sticking with it for now. I am trying out just a couple of things though.</p>
+
+			<p>For one, I have started to take a creatine supplement. As long as I have been lifting weights, creatine is
+something I have never tried. Mostly I just didn’t believe in it, and I saw great results without it, so why
+bother? After doing some research, I decided to give it a try. Since I’m not eating red meat, I’m not
+getting a lot (maybe not any) natural creatine in my diet. I bought enough to last me maybe 2 or 3
+months. We’ll see what happens.</p>
+			
+			<p>Another thing I am trying out is intermittent fasting. Basically, I’m just skipping breakfast and/or lunch.
+The goal is to still eat the same amount of calories I regularly would, but just to do it in a smaller window
+of time. Why am I doing this? I have seen a lot of information recently that suggests intermittent fasting
+leads to an increased lifespan. It also could be easier to lose weight with fasting (which is the main
+reason people do it), but I find losing weight to be fairly easy anyways so that doesn’t matter much to
+me. I’ve even heard that fasting can improve focus. Now that is something that I am interested in. I will
+update next month with how it’s going.</p>
+
+			<h2>Music/Art</h2>
+			<p>I spent 2.0 hours on music this month. That time was split between producing a new beat and writing lyrics to go with it.</p>
+			 	
+            <h2>Other</h2>
+            <p>In this past month, I spent <strong>2.75</strong> hour doing other productive stuff like writing last month's blog entry and meditating. I stopped meditating right around the middle 
+			of the month. While I did find some value in it, ultimately it is not something I will be spending time on every day. With that said, I may still meditate from time to time if I feel 
+			that I should.</p>
+				
+            <h2>Goals for next month (March 2019):</h2>
+            <h3>Software Dev Goals:</h3>
+            <ul>
+                <li>Work hard in Programming Languages and Operating Systems classes.</li>
+            </ul>
+            <h3>Fitness Goals:</h3>
+            <ul>
+				<li>null</li>
+            </ul>
+			
+			<div id="disqus_thread"></div>
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_URL; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://ianterry.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+			
+        </div>
+        <div class="col-md-3"></div>
+    </div>
+</div>
+
+{% endblock %}
