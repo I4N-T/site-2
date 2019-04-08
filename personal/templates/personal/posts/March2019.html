@@ -1,0 +1,96 @@
+{% extends "personal/header.html" %}
+
+
+{% block content %}
+
+{% load static %}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-3"></div>
+
+        <div class="col-md-6" style="background-color: white;">
+            <h1 class="text-center" style="margin-top: -10px; padding-bottom: 5px;">Productivity Report - March 2019</h1>
+            <img class="img-responsive banner-img" src="{% static '/March2019.png' %}" alt="March 2019 banner" />
+
+            <p>This month's banner features ... whatever.</p>
+            <h2>Broad Overview</h2>
+            <p>March 2019 is the 31st month in which I have tracked my productivity.</p>
+            <ul>
+                <li>Fitness: <strong>27.75</strong> hours</li> 
+                <li>Software Development: <strong>40.75</strong> hours</li>
+				<li>Music/Art: <strong>0</strong> hours</li>
+                <li>Other: <strong>1.25</strong> hours</li>
+                <li>Total productive hours: <strong>69.25</strong> hours</li>
+            </ul>
+            <p>My average amount of productive hours per day (from all categories) was <strong>2.23</strong> hours.</p>
+
+			
+            <h2>Software Development</h2>
+            <p>My software development goal for the month of March 2019 was:</p>
+            <ul>
+				<li>Work hard in Programming Languages and Operating Systems classes.</li>
+			</ul>
+				
+			<p>Once again, all is going well. Not really much to say here. I'm learning some good stuff, and I have an A in both classes as of now. I've had quite a few actual programming assignments 
+			from both classes as well, so that's nice. My goal for April will just be to continue working hard and making good grades and becoming a better programmer.</p>
+			
+									       			
+            <h2>Fitness</h2>
+            <p>In March 2019, my overall fitness hours totalled to <strong>27.25</strong> hours. I spent <strong>20.75</strong> hours lifting weights, and I spent <strong>6.5</strong> hours on cardio. 
+			 My average lifting hours per week was <strong>4.69</strong> hours, and my average cardio hours per week was <strong>1.47</strong> hours.</p>
+			
+			<p>Last month I mentioned I was trying a couple of new things. That is, I started taking a creatine supplement, and I've been doing intermittent fasting. We'll start with the creatine.<p>
+			
+			<p>I started creatine about a month ago, and I can already say that I'm seeing great results. I'm surprised how much of an effect the creatine has had to be honest. It feels like I've 
+			made 6 weeks of strength progress in the past 2 weeks. I haven't noticed any affects on my focus or anything else that people sometimes attribute to creatine, but the strength effects are 
+			really great.</p>
+
+			<p>The other new thing I've been doing is intermittent fasting. Basically, I only eat between 4:30 pm and 11:00 pm. The most common form of intermittent fasting I see mentioned online is 
+			16 hours of fasting with an 8 hour eating window. The only reason I'm doing a 6-7 hour window instead is because it is easier to do it that way with my schedule. Anyways, I like this way of 
+			eating so far. I find that I do not get hungry during my fasting period, so it really isn't any more difficult than a regular diet for me. So far I have not seen much change in my weight. Also, 
+			I have not noticed any effects, mentally or endurance wise, since starting intermittent fasting. I will continue with intermittent fasting for the time being, and I will update again next month.</p>
+			
+
+			<h2>Music/Art</h2>
+			<p>I did not do anything creative this month.</p>
+			 	
+            <h2>Other</h2>
+            <p>In this past month, I spent <strong>1.25</strong> hour doing other productive stuff like writing last month's blog entry.</p>
+				
+            <h2>Goals for next month (April 2019):</h2>
+            <h3>Software Dev Goals:</h3>
+            <ul>
+                <li>Work hard in Programming Languages and Operating Systems classes.</li>
+            </ul>
+            <h3>Fitness Goals:</h3>
+            <ul>
+				<li>null</li>
+            </ul>
+			
+			<div id="disqus_thread"></div>
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_URL; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://ianterry.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+			
+        </div>
+        <div class="col-md-3"></div>
+    </div>
+</div>
+
+{% endblock %}
