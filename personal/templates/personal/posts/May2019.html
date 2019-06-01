@@ -1,0 +1,94 @@
+{% extends "personal/header.html" %}
+
+
+{% block content %}
+
+{% load static %}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-3"></div>
+
+        <div class="col-md-6" style="background-color: white;">
+            <h1 class="text-center" style="margin-top: -10px; padding-bottom: 5px;">Productivity Report - May 2019</h1>
+            <img class="img-responsive banner-img" src="{% static '/May2019.png' %}" alt="May 2019 banner" />
+
+            <p>This month's banner features...</p>
+            <h2>Broad Overview</h2>
+            <p>May 2019 is the 33rd month in which I have tracked my productivity.</p>
+            <ul>
+                <li>Fitness: <strong>30.75</strong> hours</li> 
+                <li>Software Development: <strong>19.75</strong> hours</li>
+				<li>Music/Art: <strong>1.00</strong> hours</li>
+                <li>Other: <strong>7.00</strong> hours</li>
+                <li>Total productive hours: <strong>58.50</strong> hours</li>
+            </ul>
+            <p>My average amount of productive hours per day (from all categories) was <strong>1.89</strong> hours.</p>
+
+			
+            <h2>Software Development</h2>
+            <p>For the month of May 2019, I did not have any software development related goals. I anticipated a busy month for myself, so I expected to sacrifice some amount of software development time. I ended up with only 
+			19.75 hours of computer science study, which is about what I expected.</p>
+				
+			<p>Most of my software dev time this month was spent reading through and working problems from <a href="http://www.crackingthecodinginterview.com/">Cracking the Coding Interview</a> by Gayle Laakmann McDowell. Even 
+			though I have not gotten very far into the book yet, I still feel like I've learned some valuable stuff. I would say that I feel considerablly more comfortable now with the idea of grueling tech interviews. Unfortunately, 
+			I may be setting the book aside for quite a while as the summer term is starting up soon, and I will be busy with class. I will definitely pick CTCI up again in the near future and finish working through all the problems.</p>
+			
+			<p>Beginning June 3, I will be taking Introduction to Database Systems. I do have a bit of experience with database stuff (SQL) from taking Harvard's CS50, but I'm hoping (and expecting) this course to go into more depth. 
+			Databases are an important aspect of most software applications, so I am eager to get started with class and learn as much as I can. My goal for June will just be to work hard in class and make good grades.</p>
+									       			
+            <h2>Fitness</h2>
+            <p>In May 2019, my overall fitness hours totalled to <strong>30.75</strong> hours. I spent <strong>12.00</strong> hours lifting weights, and I spent <strong>18.75</strong> hours on cardio. 
+			 My average lifting hours per week was <strong>2.71</strong> hours, and my average cardio hours per week was <strong>4.23</strong> hours.</p>
+			
+			<p>Admittedly, I did skip a few lifting days this month. I also deviated from my diet more than usual. No big deal, but I will make it a goal to buckle down on my good habits in the coming month.<p>
+			
+
+			<h2>Music/Art</h2>
+			<p>I spent 1 hour working on music production this month.</p>
+			 	
+            <h2>Other</h2>
+            <p>In this past month, I spent <strong>7.0</strong> hours doing other productive stuff. Most of that time was spent dealing with OMSCS application stuff. I also found a car to buy, which took up a decent amount of time, but I 
+			neglected to record that time spent as productive hours.</p>
+				
+            <h2>Goals for next month (June 2019):</h2>
+            <h3>Software Dev Goals:</h3>
+            <ul>
+                <li>Work hard in Introduction to Database Systems class.</li>
+            </ul>
+            <h3>Fitness Goals:</h3>
+            <ul>
+				<li>null</li>
+            </ul>
+			<h3>Other Goals:</h3>
+            <ul>
+				<li>null</li>
+            </ul>
+			
+			
+			<div id="disqus_thread"></div>
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_URL; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://ianterry.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+			
+        </div>
+        <div class="col-md-3"></div>
+    </div>
+</div>
+
+{% endblock %}
