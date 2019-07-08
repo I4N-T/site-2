@@ -1,0 +1,94 @@
+{% extends "personal/header.html" %}
+
+
+{% block content %}
+
+{% load static %}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-3"></div>
+
+        <div class="col-md-6" style="background-color: white;">
+            <h1 class="text-center" style="margin-top: -10px; padding-bottom: 5px;">Productivity Report - June 2019</h1>
+            <img class="img-responsive banner-img" src="{% static '/June2019.png' %}" alt="June 2019 banner" />
+
+            <p>This month's banner features a typical plant-based dinner that I might have. This meal included baked sweet potatoes, onion, and green bell pepper with peas and rice made in a rice cooker and some fresh spinach. I seasoned 
+			my bowl with cumin, turmeric, kosher salt, black pepper, and nutritional yeast. No oil was used in the making of this meal.</p>
+            <h2>Broad Overview</h2>
+            <p>June 2019 is the 34th month in which I have tracked my productivity.</p>
+            <ul>
+                <li>Fitness: <strong>38.00</strong> hours</li> 
+                <li>Software Development: <strong>54.50</strong> hours</li>
+				<li>Music/Art: <strong>0.00</strong> hours</li>
+                <li>Other: <strong>1.00</strong> hours</li>
+                <li>Total productive hours: <strong>93.50</strong> hours</li>
+            </ul>
+            <p>My average amount of productive hours per day (from all categories) was <strong>3.12</strong> hours.</p>
+
+			
+            <h2>Software Development</h2>
+            <p>For the month of June 2019, my only goal was to work hard in my Introduction to Database Systems class. I would say that I have succeeded in that goal. So far, I have earned good grades in the class. This is a 
+			summer class, so it should be expected to be a bit busier than a regular class, but even so I have been surprised by just how much work is required each week and how much material is being covered. I can definitely say 
+			that this class is keeping me busy, and I am learning a ton. The 54.50 hours of software development time I've put in this month should be evidence of that fact.</p>
+				
+			<p>The class, so far, has been largely theoretical, focusing on the relational database model. There have also been some more practical assignments with designing and implementing a database in Oracle. This class also requires 
+			me to write a research paper, which I was suprised to learn. I accept and welcome the challenge.</p>
+			
+			<p>In other news, I do expect to hear back soon on whether or not I will be accepted into Georgia Tech's OMSCS program. I think I will probably receive a determination in July or August.</p>
+									       			
+            <h2>Fitness</h2>
+            <p>In June 2019, my overall fitness hours totalled to <strong>38.00</strong> hours. I spent <strong>21.75</strong> hours lifting weights, and I spent <strong>16.25</strong> hours on cardio. 
+			 My average lifting hours per week was <strong>5.08</strong> hours, and my average cardio hours per week was <strong>3.79</strong> hours.</p>
+			
+			<p>Not much to say other than I feel pretty good about the work I've put in this month. I followed my routine and ate well for the most part.<p>
+			
+
+			<h2>Music/Art</h2>
+			<p>Nothing to see here.</p>
+			 	
+            <h2>Other</h2>
+            <p>In this past month, I spent <strong>1.0</strong> hours doing other productive stuff. I did also buy a car this month. It is a 2010 Toyota Corolla with 123,000 miles. I am proud of myself for making this responsible and 
+			frugal purchase. Because I chose to buy a $5,000 car instead of a $20,000 car, I will likely be able to retire slightly earlier.</p>
+				
+            <h2>Goals for next month (July 2019):</h2>
+            <h3>Software Dev Goals:</h3>
+            <ul>
+                <li>Work hard in Introduction to Database Systems class.</li>
+            </ul>
+            <h3>Fitness Goals:</h3>
+            <ul>
+				<li>null</li>
+            </ul>
+			<h3>Other Goals:</h3>
+            <ul>
+				<li>null</li>
+            </ul>
+			
+			
+			<div id="disqus_thread"></div>
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_URL; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://ianterry.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+			
+        </div>
+        <div class="col-md-3"></div>
+    </div>
+</div>
+
+{% endblock %}
