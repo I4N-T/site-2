@@ -1,0 +1,94 @@
+{% extends "personal/header.html" %}
+
+
+{% block content %}
+
+{% load static %}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-3"></div>
+
+        <div class="col-md-6" style="background-color: white;">
+            <h1 class="text-center" style="margin-top: -10px; padding-bottom: 5px;">Productivity Report - July 2019</h1>
+            <img class="img-responsive banner-img" src="{% static '/July2019.png' %}" alt="July 2019 banner" />
+
+            <p>This month's banner features the flag on my office wall.</p>
+            <h2>Broad Overview</h2>
+            <p>July 2019 is the 35th month in which I have tracked my productivity.</p>
+            <ul>
+                <li>Fitness: <strong>23.75</strong> hours</li> 
+                <li>Software Development: <strong>42.25</strong> hours</li>
+				<li>Music/Art: <strong>0.00</strong> hours</li>
+                <li>Other: <strong>0.75</strong> hours</li>
+                <li>Total productive hours: <strong>68.25</strong> hours</li>
+            </ul>
+            <p>My average amount of productive hours per day (from all categories) was <strong>2.28</strong> hours.</p>
+
+			
+            <h2>Software Development</h2>
+            <p>For the month of July 2019, my only goal was to work hard in my Introduction to Database Systems class. I ended up with an A in the class, so I'll call that a success. Overall, I enjoyed the class. It was a much 
+			heavier workload than expected, but I welcome the surprise. I learned a thing or two about relational databases, but unfortunately I feel that a single class is only barely enough to scratch the surface. I will consider 
+			taking further classes on databases as I work on my degree.</p>
+			
+			<p>By the way, I have officially been accepted to Georgia Tech's OMSCS program. I start in the Spring 2020 semester. Until then, I will continue to take classes at UIS. Coming up this next semeser (Fall 2019), I've got 
+			Computer Organization and Software Engineering Capstone. I know it sounds odd for me to be taking a capstone class when I don't even plan to continue the program at that school; but my understanding of the class is that it 
+			is sort of a general class teaching software engineering practices/methods. Either way, I'm looking forward to begin class on August 26.</p>
+			
+			<p>In the meantime before class starts, my project is to build myself a new pc. I have all the parts ordered, and I will be putting everything together as soon as possible. My total cost (not including mouse, 
+			keyboard, speakers, monitors) was about $750. This pc should be capable of playing any newly released games on the highest graphics settings. I'm not reallly a big gamer, but I would like to have the option 
+			to play games less than 5 years old. I will most likely be keeping my current pc, but I'm not sure yet what I'll do with it. I may turn it into a linux machine just to play with. </p>
+									       			
+            <h2>Fitness</h2>
+            <p>In July 2019, my overall fitness hours totalled to <strong>23.75</strong> hours. I spent <strong>10.5</strong> hours lifting weights, and I spent <strong>13.25</strong> hours on cardio. 
+			 My average lifting hours per week was <strong>2.37</strong> hours, and my average cardio hours per week was <strong>2.99</strong> hours.</p>
+			
+			<p>My fitness hours were down a bit from last month, but that is to be expected with July 4 festivities.<p>	
+
+			<h2>Music/Art</h2>
+			<p>Nothing to see here. </p>
+			 	
+            <h2>Other</h2>
+            <p>In this past month, I spent <strong>0.75</strong> hours doing other productive stuff.</p>
+				
+            <h2>Goals for next month (July 2019):</h2>
+            <h3>Software Dev Goals:</h3>
+            <ul>
+                <li>Build a pc</li>
+            </ul>
+            <h3>Fitness Goals:</h3>
+            <ul>
+				<li>null</li>
+            </ul>
+			<h3>Other Goals:</h3>
+            <ul>
+				<li>null</li>
+            </ul>
+			
+			
+			<div id="disqus_thread"></div>
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_URL; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://ianterry.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+			
+        </div>
+        <div class="col-md-3"></div>
+    </div>
+</div>
+
+{% endblock %}
