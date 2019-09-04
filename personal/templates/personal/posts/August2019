@@ -1,0 +1,111 @@
+{% extends "personal/header.html" %}
+
+
+{% block content %}
+
+{% load static %}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-3"></div>
+
+        <div class="col-md-6" style="background-color: white;">
+            <h1 class="text-center" style="margin-top: -10px; padding-bottom: 5px;">Productivity Report - August 2019</h1>
+            <img class="img-responsive banner-img" src="{% static '/August2019.png' %}" alt="August 2019 banner" />
+
+            <p>This month's banner features a screenshot of my screen as I worked on Project 1 of <a href="https://www.nand2tetris.org/">Nand2Tetris</a>.</p>
+            <h2>Broad Overview</h2>
+            <p>August 2019 is the 36th month in which I have tracked my productivity.</p>
+            <ul>
+                <li>Fitness: <strong>16.75</strong> hours</li> 
+                <li>Software Development: <strong>18.50</strong> hours</li>
+				<li>Music/Art: <strong>0.00</strong> hours</li>
+                <li>Other: <strong>0.00</strong> hours</li>
+                <li>Total productive hours: <strong>35.25</strong> hours</li>
+            </ul>
+            <p>My average amount of productive hours per day (from all categories) was <strong>1.14</strong> hours. This might be my least productive month since I've been tracking my productivity. While I did take a week-long 
+			vacation to visit family, that doesn't totally explain August's lack of productivity. Honestly, I pretty much just took an extended break from doing anything productive. Even though I hate looking at the small numbers 
+			I've recorded for this month, I don't think the break was all that bad. I feel refreshed, and I'm already back into the swing of things.</p>
+
+			
+            <h2>Software Development</h2>
+            <p>My goal for the month of August was to build a pc, and I did just that. In fact, I am typing this on my new pc right now. Here is what I'm working with:</p>
+			
+			<ul>
+                <li>Motherboard: ASRock MicroAtx B450M Pro4</li>
+				<li>CPU: AMD Ryzen 5 2600</li>
+				<li>Video Card: GeForce GTX 1660 Ti</li>
+				<li>Memory: 16 GB DDR4-3000</li>
+				<li>Storage: HP ssd EX900 M.2 500 GB</li>
+				<li>Power Supply: Corsair 550 W</li> 
+            </ul>
+			
+			<p>The process of assembling the PC, from unboxing each component to completing Windows installation, took about 4 hours. This all definitely could have been done in far less than 4 hours, but this is my first time building 
+			a custom PC so I made sure to take my time and do it right. So far everything is working great. I have tested the PC with <i>Grand Theft Auto V</i> and <i>Dark Souls 3</i>, both with all graphics settings set as high as possible. Both 
+			games run smoothly with no issues. I know there are newer and/or more technically demanding games I could have tested with, but GTAV and DS3 are probably the two games that I have most been wanting to play on PC that I had previously 
+			been unable to play due to the technical limitations of my old PC.</p>
+			
+			<p>I plan for this new PC to be my daily driver, so to speak. I will use it for browsing the internet, gaming, and music production. Before the Spring 2020 semester begins, I plan to purchase a cheap refurbished Lenovo 
+			Thinkpad to use as a dedicated "work" machine. One reason for this is because I think I might like to do some coding outside of my apartment, so I will need a laptop. In the meantime, I will just use my new PC for coding.</p>
+			
+			<p>In last month's report, I mentioned that I would be continuing with classes at UIS taking Computer Organization and Software Engineering Capstone. After further consideration I decided to withdraw from both classes. Why? 
+			The cost of taking both classes would have been about $3,500 (can't remember exactly). The cost of taking only one class was right around $2,000. The thing is, Georgia Tech does not accept any transfer credit for the OMSCS program.
+			 Ultimately, I decided that I just cannot justify spending that amount of money if I'm not going to be able to use the credits. Of course, that isn't to say that I won't continue to study and learn. Before I ever enrolled in 
+			 any computer science classes, I was self-studying, learning, and sharpening my skills at a rapid pace - and that is just what I am going to do for the next few months.</p>
+			 
+			<p>For the time being, I am working through a popular online course called <a href="https://www.nand2tetris.org/">Nand to Tetris</a>. Nand to Tetris is essentially a computer organization / computer architecture course. So 
+			far I have completed Project 1 and started with Project 2, and I already feel that I've learned a ton. Once I complete the course, I will work on another project - probably a game or an Android app.</p>
+									       			
+            <h2>Fitness</h2>
+            <p>In August 2019, my overall fitness hours totalled to <strong>16.75</strong> hours. I spent <strong>4.75</strong> hours lifting weights, and I spent <strong>12.00</strong> hours on cardio. 
+			 My average lifting hours per week was <strong>1.07</strong> hours, and my average cardio hours per week was <strong>2.71</strong> hours.</p>
+			
+			<p>Obviously I did not lift very often this past month. As stated previously, I was on an extended break from being productive, and that included lifting. Anyways, I'm already back on schedule with the regular routine. It's all good.<p>	
+
+			<h2>Music/Art</h2>
+			<p>Nothing to see here.</p>
+			 	
+            <h2>Other</h2>
+            <p>In this past month, I spent <strong>0</strong> hours doing other productive stuff.</p>
+				
+            <h2>Goals for next month (September 2019):</h2>
+            <h3>Software Dev Goals:</h3>
+            <ul>
+                <li>Continue working through Nand2Tetris.</li>
+            </ul>
+            <h3>Fitness Goals:</h3>
+            <ul>
+				<li>Go to the gym and lift weights like usual.</li>
+            </ul>
+			<h3>Other Goals:</h3>
+            <ul>
+				<li>null</li>
+            </ul>
+			
+			
+			<div id="disqus_thread"></div>
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_URL; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://ianterry.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+			
+        </div>
+        <div class="col-md-3"></div>
+    </div>
+</div>
+
+{% endblock %}
