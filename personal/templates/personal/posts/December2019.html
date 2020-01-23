@@ -1,0 +1,88 @@
+{% extends "personal/header.html" %}
+
+
+{% block content %}
+
+{% load static %}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-3"></div>
+
+        <div class="col-md-6" style="background-color: white;">
+            <h1 class="text-center" style="margin-top: -10px; padding-bottom: 5px;">Productivity Report - December 2019</h1>
+            <img class="img-responsive banner-img" src="{% static '/December2019.png' %}" alt="December 2019 banner" />
+
+            <p>This month's banner features a Christmas symphony that I attended. I did not take this picture. I was only in the audience.</p>
+            <h2>Overview</h2>
+            <p>December 2019 is the 40th month in which I have tracked my productivity.</p>
+            <ul>
+                <li>Fitness: <strong>13.75</strong> hours</li> 
+                <li>Software Development: <strong>12.75</strong> hours</li>
+				<li>Music/Art: <strong>0.00</strong> hours</li>
+                <li>Other: <strong>2.00</strong> hours</li>
+                <li>Total productive hours: <strong>28.50</strong> hours</li>
+            </ul>
+            <p>My average amount of productive hours per day (from all categories) was <strong>0.95</strong> hours. This may have been my least productive month yet (somewhat due to the fact I took about 2 weeks vacation at the end of the month). Fortunately, 
+             since it's already mid-late January at the time of me writing this, I can already say that next month's report is going to look a lot better. The reason I'm so late getting to this blog post is mostly because I've been busy with school.
+             In fact, I'm still busy, so this blog is going to be pretty short.</p>
+
+			
+            <h2>Software Development</h2>
+
+            <p>I worked through a few problems in  <a href="http://www.crackingthecodinginterview.com/">Cracking the Coding Interview</a> and that's really about it. I promise I'll have something more interesting for next month's blog.</p>
+
+									       			
+            <h2>Fitness</h2>
+            <p>In December 2019, my overall fitness hours totalled to <strong>13.75</strong> hours. I spent <strong>8.25</strong> hours lifting weights, and I spent <strong>5.50</strong> hours on cardio. 
+			 My average lifting hours per week was <strong>1.82</strong> hours, and my average cardio hours per week was <strong>1.24</strong> hours.</p>
+			
+			<p>Look, it's not great. I know that. Again, a two week long vacation is the main culprit here. Check back next month to see if I've redeemed myself.<p>	
+
+			<h2>Music/Art</h2>
+			<p>Nothing to see here.</p>
+			 	
+            <h2>Other</h2>
+            <p>In this past month, I spent <strong>2.00</strong> hours doing other productive stuff.</p>
+				
+            <h2>Goals for next month (January 2020):</h2>
+            <h3>Software Dev Goals:</h3>
+            <ul>
+				<li>Work hard in school, and learn stuff about computers.</li>
+            </ul>
+            <h3>Fitness Goals:</h3>
+            <ul>
+				<li>Get back into the habit of daily exercise.</li>
+            </ul>
+			<h3>Other Goals:</h3>
+            <ul>
+				<li>null</li>
+            </ul>
+			
+			
+			<div id="disqus_thread"></div>
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_URL; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://ianterry.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+			
+        </div>
+        <div class="col-md-3"></div>
+    </div>
+</div>
+
+{% endblock %}
