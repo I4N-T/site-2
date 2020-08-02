@@ -12,6 +12,7 @@
             <h1 class="text-center" style="margin-top: -15px;">Blog Posts</h1>
 
 			{% load static %}
+            <a href="{% url 'posts' 'July2020' %}"><img class="img-responsive banner-img" src="{% static '/July2020.png' %}" alt="July Productivity Report" /></a>
 			<a href="{% url 'posts' 'June2020' %}"><img class="img-responsive banner-img" src="{% static '/June2020.png' %}" alt="June Productivity Report" /></a>
             <a href="{% url 'posts' 'janfeb2020' %}"><img class="img-responsive banner-img" src="{% static '/JanFeb2020.png' %}" alt="January/February Productivity Report" /></a>
             <a href="{% url 'posts' 'December2019' %}"><img class="img-responsive banner-img" src="{% static '/December2019.png' %}" alt="December 2019 Productivity Report" /></a>

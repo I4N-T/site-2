@@ -1,0 +1,132 @@
+{% extends "personal/header.html" %}
+
+
+{% block content %}
+
+{% load static %}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-3"></div>
+
+        <div class="col-md-6" style="background-color: white;">
+            <h1 class="text-center" style="margin-top: -10px; padding-bottom: 5px;">Productivity Report - July 2020</h1>
+            <img class="img-responsive banner-img" src="{% static '/July2020.png' %}" alt="July 2020 banner" />
+
+            <p>This month's banner features a pan pizza that I made.</p>
+            <h2>Overview</h2>
+			<p>July was probably my most productive month of the year so far. Have a look.</p>
+
+			<p>July 2020 is the 47th month in which I have tracked my productivity.</p>
+            <ul>
+                <li>Fitness: <strong>42.75</strong> hours</li> 
+                <li>Software Development: <strong>121.25</strong> hours</li>
+				<li>Music/Art: <strong>0.00</strong> hours</li>
+                <li>Other: <strong>2.25</strong> hours</li>
+                <li>Total productive hours: <strong>166.25</strong> hours</li>
+            </ul>
+            <p>My average amount of productive hours per day (from all categories) was <strong>5.36</strong> hours.</p>
+
+			
+            <h2>Software Development</h2>
+
+            <p>The summer semester has wrapped up, and although official grades have yet to be released I can say with a fair amount of confidence that I made an A in
+            <a href="https://omscentral.com/course/CS-6035">Intro to Information Security</a>. Here is my review of the class:</p> 
+
+            <p>Projects 1, 3, 4, and the extra-credit project were challenging and worthwhile. I 
+            learned some interesting stuff through these projects that I would have not learned otherwise, and that makes taking the class worthwhile. The midterm and final exam, on the 
+            other hand, were pretty much devoid of any value. Questions were multiple choice and taken more-or-less verbatim from the textbook. Adequate information on how students should focus
+            their studies for the exams was not provided. The teaching staff in this class were frequently unhelpful in their responses to questions, in such a way that I can only assume most TAs I interacted with
+            did not actually read the entirety of the concise questions I presented to them. The majority of the grade in this class was based on 4 projects, each worth 15% of the total grade. The midterm and final exams were worth another 15% each, and the
+            remaining %10 was from our weekly ctrl-f exercises aka weekly quizzes.</p>
+
+			<p><b>Project 1</b> consisted of a large amount of short essay questions concerning some fundamental operating system and security concepts. In the more practical part of the 
+            project, we were given source code to a program and tasked with exploiting the program to execute a return-to-libc attack. The essay questions in this project provided an 
+            excellent review (or introduction) to some operating system fundamentals (virtual memory, memory allocation, stack structure and program flow, etc.). In fact, I very well may 
+            refer back to my Project 1 submission in the future whenever I need a quick refresher on some of these topics. Practically, this project provided useful experience with the C language, 
+            debugging with GDB, and specific exploits such as stack-overflow attacks and return-to-libc attacks.</p>
+
+			<p><b>Project 2</b> involved running various malware in <a href=https://cuckoosandbox.org/>Cuckoo sandbox</a> on a VM, analyzing the generated malware reports, and answering some 
+            questions. This project was ok, I guess, but it certainly was not as valuable as the other projects.</p>
+
+            <p><b>Project 2.5</b> was an extra-credit project. I did complete this project (receiving full credit), and I'm glad I did. For this project, we were given some malware reports (such 
+            as those that may be genereated by Cuckoo (see Project 2 description), and tasked with using <a href=http://www.mlsec.org/malheur/manual.html> Malheur</a> to successfully 
+            classify each of the given reports. We also had to write a report detailing how Malheur uses machine learning to cluster and classify malware. The written report required detailed 
+            explanations of each parameter of a Malheur configuration file and how each parameter affects the overall model. For me, this project served as an introduction to machine learning.
+            I may take an atual machine learning class in the future, but whether or not I do, at least now I know something about the topic.</p>
+
+            <p><b>Project 3</b> was all about cryptography, and I thoroughly enjoyed it (although it was difficult and frustrating). Basically, the project consisted of various tasks that 
+            involved cracking hashing algorithms. We were required to write a short essay for each task explaining why the cryptographic algorithms used were vulnerable as well as explaining 
+            the mathematic concepts behind our attacks. I've never taken a class on number theory, but now I kind of feel like I have. This project involved a decent amount of Python coding, 
+            which I previously did not have a ton of experience with, so that's nice.</p>
+
+            <p><b>Project 4</b> was about web security. We were given the url to a fake banking website (in a VM) and were tasked with attacking it using cross-site request forgery, 
+            cross-site scripting, and SQL injection. For someone like myself with limited web development experience, this project was very educational on web dev, in general, as well 
+            as the relevant security concepts. As usual, this project also required a detailed written report.</p>
+
+			<p>After taking the final exam on July 24, I shifted my focus to <a href="https://www.youtube.com/watch?v=vplEwIJzYZk">this fun tutorial</a> on how to build a social networking 
+            app using Firebase as the backend. As you may recall from last month's blog entry, I was already working through this tutorial before class ended; however, I did not have all that 
+            much time to put into it. After getting about halfway through the tutorial, I began to use what I've learned to create my own social media app. I have only just begun to work on this,
+            but I'm hoping the end result will be a portfolio-worthy minimalist social media app (something along the lines of a Twitter).</p>
+
+            <p>The Fall 2020 semester begins August 17. I am enrolled in <a href="https://omscentral.com/course/CS-6290">High Performance Computer Architecture (HPCA)</a> and <a href="https://omscentral.com/course/CS-6310">Software Architecture and Design (SAD)</a>.
+            I am looking forward to both courses, but I am especially excited about HPCA.</p>
+									       			
+            <h2>Fitness</h2>
+            <p>In July 2020, my overall fitness hours totalled to <strong>42.75</strong> hours. I spent <strong>23.75</strong> hours lifting weights (and doing calisthenics), and I spent <strong>19.00</strong> hours on cardio. 
+			 My average lifting hours per week was <strong>5.36</strong> hours, and my average cardio hours per week was <strong>4.29</strong> hours.</p>
+
+            <p>I took zero days off this month. My body appreciates that very much. I also ate very well all month long. I lost fat and gained muscle. I plan to continue this trend next month (and beyond).
+            I am eager to get back to the gym where I can actually lift weights, but I am still wary due to the pandemic. Nevertheless, I'm tentatively planning to get back in the gym starting in September.</p>
+			
+			<p>On August 3, I will be taking my first boxing class. I have always wanted to learn a self-defense technique, and after some research I found there is a reputable boxing gym nearby.
+            We'll see how it goes.<p>	
+
+			<h2>Music/Art</h2>
+			<p>NULL</p>
+			 	
+            <h2>Other</h2>
+            <p>In this past month, I spent <strong>2.25</strong> hours doing other productive stuff.</p>
+				
+            <h2>Goals for next month (August 2020):</h2>
+            <h3>Software Dev Goals:</h3>
+            <ul>
+				<li>Work hard in school, and learn stuff about computers.</li>
+                <li>Practice Android development</li>
+            </ul>
+            <h3>Fitness Goals:</h3>
+            <ul>
+				<li>Continue to exercise every day.</li>
+            </ul>
+			<h3>Other Goals:</h3>
+            <ul>
+				<li>null</li>
+            </ul>
+			
+			
+			<div id="disqus_thread"></div>
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_URL; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://ianterry.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+			
+        </div>
+        <div class="col-md-3"></div>
+    </div>
+</div>
+
+{% endblock %}
