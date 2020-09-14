@@ -1,0 +1,99 @@
+{% extends "personal/header.html" %}
+
+
+{% block content %}
+
+{% load static %}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-3"></div>
+
+        <div class="col-md-6" style="background-color: white;">
+            <h1 class="text-center" style="margin-top: -10px; padding-bottom: 5px;">Productivity Report - August 2020</h1>
+            <img class="img-responsive banner-img" src="{% static '/August2020.png' %}" alt="August 2020 banner" />
+
+            <p>This month's banner features my first pair of boxing gloves.</p>
+            <h2>Overview</h2>
+			<p>Overall hours are just a bit low for my taste, but that's mostly due to the 5 days in a row I took off prior to the beginning of the semester.</p>
+
+			<p>August 2020 is the 48th month in which I have tracked my productivity.</p>
+            <ul>
+                <li>Fitness: <strong>42.25</strong> hours</li> 
+                <li>Software Development: <strong>94.00</strong> hours</li>
+				<li>Music/Art: <strong>0.00</strong> hours</li>
+                <li>Other: <strong>3.25</strong> hours</li>
+                <li>Total productive hours: <strong>139.50</strong> hours</li>
+            </ul>
+            <p>My average amount of productive hours per day (from all categories) was <strong>4.50</strong> hours.</p>
+
+			
+            <h2>Software Development</h2>
+
+            <p>As stated in last month's blog, My focus in the first half of August (before the fall semester began) was practicing Android development by building a minimalist social media app.
+            Unfortunately, I did not wrap the project up in time before the semester started, but I did make good progress. I hope to pick back up on this project as soon as I can, but I can already 
+            tell that I'm going to be very busy with school throughout this next semester. Perhaps my workload from class will slow down at some point, and I will have some quality time to work on it.</p> 
+
+			<p>The Fall 2020 semester officially began on August 17. I am taking <a href="https://omscentral.com/course/CS-6290">High Performance Computer Architecture (HPCA)</a> and <a href="https://omscentral.com/course/CS-6310">Software Architecture and Design (SAD)</a>.
+            So far, I am enjoying both classes very much. HPCA has a heavy workload, and the material is very difficult to understand. For those reasons, it also is shaping up to be a very rewarding experience. SAD is a bit of a lighter 
+            workload; however, the material is highly relevant to software development, which is what I like to do. I guess there isn't really much to say about either course at this point. As usual, I will continue 
+            to update each month with more specifics on what I've been working on.</p>
+						       			
+            <h2>Fitness</h2>
+            <p>In August 2020, my overall fitness hours totalled to <strong>42.25</strong> hours. I spent <strong>14.25</strong> hours lifting weights (and doing calisthenics), and I spent <strong>15.75</strong> hours on cardio. 
+			 My average lifting hours per week was <strong>3.22</strong> hours, and my average cardio hours per week was <strong>3.56</strong> hours.</p>
+
+            <p>On August 3, I had my first boxing lesson. In total, during August I spent 12.25 hours learning and/or practicing boxing. Basically, that's three 1-hour long classes each week plus some additional solo practice at home.
+            Note that I am not double counting any hours here. I've chosen to log boxing hours as it's own category separate from cardio.</p>
+
+            <p>Beginning September 1, I plan to start going back to the gym for weight lifting. I will wear a mask and do my best to maintain distance from others. I also will be going to the gym in the middle of 
+            the day when it typically is not very busy. Lifting weights is simply too important to neglect any longer. While I was able to maintain a decent amount of muscle with calisthenics these past few months, calisthenics 
+            alone really are no replacement for weight lifting.</p>
+
+			<h2>Music/Art</h2>
+			<p>NULL</p>
+			 	
+            <h2>Other</h2>
+            <p>In this past month, I spent <strong>3.25</strong> hours doing other productive stuff.</p>
+				
+            <h2>Goals for next month (September 2020):</h2>
+            <h3>Software Dev Goals:</h3>
+            <ul>
+				<li>Work hard in school, and learn stuff about computers.</li>
+            </ul>
+            <h3>Fitness Goals:</h3>
+            <ul>
+				<li>Exercise every day.</li>
+            </ul>
+			<h3>Other Goals:</h3>
+            <ul>
+				<li>null</li>
+            </ul>
+			
+			
+			<div id="disqus_thread"></div>
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_URL; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://ianterry.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+			
+        </div>
+        <div class="col-md-3"></div>
+    </div>
+</div>
+
+{% endblock %}
